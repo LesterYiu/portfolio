@@ -3,6 +3,7 @@ nav {
     padding-top: 40px;
     position: fixed;
     width: 100%;
+    z-index: 20;
 
     .flexContainer {
         justify-content: space-between;
@@ -29,8 +30,8 @@ nav {
     }
 
     .logoImageContainer {
-        width: 75px;
-        height: 75px;
+        width: 50px;
+        height: 50px;
 
         img {
             width: 100%;
@@ -41,8 +42,8 @@ nav {
 }
 
 .hamburgerIconContainer {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
 
     img {
         height: 100%;

@@ -15,30 +15,32 @@ h3 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
     text-transform: capitalize;
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     text-transform: capitalize;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 //Navigation Typography
 
 nav {
     li {
-        text-transform: uppercase;
-        font-size: 2.5rem;
+        text-transform: capitalize;
+        font-size: 1.8rem;
+        margin: auto 0;
+        display: flex;
     }
 
     .logo {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: $primary-font;
     }
 }
