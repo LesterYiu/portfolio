@@ -1,0 +1,53 @@
+//Overall Typography
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $secondary-font;
+    color: $tertiary;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $primary-font;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+//Navigation Typography
+
+nav {
+    li {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-family: $primary-font;
+    }
+}
+
+//Header Typography
+
+header {
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

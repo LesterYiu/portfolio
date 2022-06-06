@@ -1,0 +1,52 @@
+nav {
+    background-color: transparent;
+    padding-top: 40px;
+    position: fixed;
+    width: 100%;
+
+    .flexContainer {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    ul {
+        li:nth-child(-n+3) {
+            margin: 0 20px;
+        }
+        
+        li:nth-child(3) {
+            margin-right: 40px;
+        }
+    }
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+
+    p {
+        margin-left: 20px;
+    }
+
+    .logoImageContainer {
+        width: 75px;
+        height: 75px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}
+
+.hamburgerIconContainer {
+    width: 75px;
+    height: 75px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+}

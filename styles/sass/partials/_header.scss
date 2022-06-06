@@ -1,0 +1,38 @@
+header {
+    background-color: $primary;
+    height: 100vh;
+    
+    .wrapper,
+    .flexContainer {
+        height: 100%;
+    }
+
+    .flexContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerContent {
+        margin-top: 75px;
+
+        h1 {
+            margin-bottom: 150px;
+        }
+
+        .arrowImageContainer{
+            margin: 25px auto 0px auto;
+        }
+    }
+}
+
+.arrowImageContainer {
+    height: 100px;
+    width: 100px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+}
