@@ -237,7 +237,7 @@ html {
 }
 
 .wrapper {
-  width: 80%;
+  width: 75%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -398,15 +398,20 @@ header .flexContainer {
           align-items: center;
 }
 header .headerContent {
-  margin-top: 120px;
   position: relative;
   z-index: 10;
 }
 header .headerContent h1 {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 header .headerContent .arrowImageContainer {
   margin: 25px auto 0px auto;
+  height: 50px;
+  width: 50px;
+}
+header .headerContent .arrowImageContainer img {
+  height: 100%;
+  width: 100%;
 }
 
 .arrowImageContainer {
@@ -430,6 +435,8 @@ header .headerContent .arrowImageContainer {
   height: 100%;
   width: 100%;
   display: block;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .cloudImageContainer {
@@ -445,6 +452,8 @@ header .headerContent .arrowImageContainer {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .cloudImageContainerTwo {
@@ -462,11 +471,14 @@ header .headerContent .arrowImageContainer {
      object-fit: cover;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .skylineBackground {
   width: 100%;
-  height: 100%;
+  height: 330px;
+  background-size: contain;
   position: absolute;
   bottom: 0;
   background-image: url("../assets/skyline.png");
