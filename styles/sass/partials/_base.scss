@@ -1,12 +1,5 @@
-.scrollContainer {
-    overflow-x: hidden;
-}
-
-.scrollContainer {
-    overflow-y: scroll;
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+body {
+    width: 100vw;
 }
 
 header,
@@ -65,4 +58,15 @@ button {
 
 .skipToMain:focus-within {
     left: 0;
+}
+
+.scrollContainer {
+    overflow-x: hidden;
+}
+
+.scrollContainer {
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
