@@ -376,8 +376,8 @@ nav ul li:nth-child(3) {
 }
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(230deg, 33%, 21%)), color-stop(34%, hsl(229deg, 39%, 24%)), color-stop(68%, hsl(229deg, 44%, 27%)), color-stop(86%, hsl(229deg, 47%, 31%)), color-stop(95%, hsl(229deg, 50%, 34%)), to(hsl(229deg, 52%, 38%)));
-  background-image: linear-gradient(180deg, hsl(230deg, 33%, 21%) 0%, hsl(229deg, 39%, 24%) 34%, hsl(229deg, 44%, 27%) 68%, hsl(229deg, 47%, 31%) 86%, hsl(229deg, 50%, 34%) 95%, hsl(229deg, 52%, 38%) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#283E51), to(#0A2342));
+  background: linear-gradient(to top, #283E51, #0A2342);
   height: 100vh;
   position: relative;
 }
@@ -427,9 +427,9 @@ header .headerContent .arrowImageContainer img {
 .moonImageContainer {
   position: absolute;
   top: 18%;
-  left: 5%;
-  height: 250px;
-  width: 250px;
+  left: 12%;
+  height: 150px;
+  width: 150px;
 }
 .moonImageContainer img {
   height: 100%;
@@ -477,11 +477,11 @@ header .headerContent .arrowImageContainer img {
 
 .skylineBackground {
   width: 100%;
-  height: 330px;
+  height: 350px;
   background-size: contain;
   position: absolute;
   bottom: 0;
-  background-image: url("../assets/skyline.png");
+  background-image: url("../assets/nightskyThree.png");
   background-repeat: repeat-x;
   background-position: 0% 100%;
 }
