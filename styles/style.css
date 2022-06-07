@@ -236,10 +236,6 @@ html {
   overflow: hidden;
 }
 
-html {
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-}
-
 header,
 section {
   scroll-snap-align: start;
