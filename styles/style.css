@@ -236,6 +236,11 @@ html {
   overflow: hidden;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 header,
 section {
   scroll-snap-align: start;
@@ -296,10 +301,6 @@ button {
 
 .skipToMain:focus-within {
   left: 0;
-}
-
-.scrollContainer {
-  overflow-x: hidden;
 }
 
 .scrollContainer {
