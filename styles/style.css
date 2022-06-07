@@ -237,6 +237,10 @@ html {
 }
 
 .scrollContainer {
+  overflow-x: hidden;
+}
+
+.scrollContainer {
   overflow-y: scroll;
   height: 100vh;
   -ms-scroll-snap-type: y mandatory;
