@@ -1,3 +1,13 @@
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
 header,
 section {
     scroll-snap-align: start;
