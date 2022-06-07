@@ -1,3 +1,7 @@
+html {
+    padding: env(safe-area-inset);
+}
+
 header,
 section {
     scroll-snap-align: start;
@@ -58,8 +62,6 @@ button {
 
 .scrollContainer {
     overflow-x: hidden;
-    position: relative;
-    width: 100%;
 }
 
 .scrollContainer {
