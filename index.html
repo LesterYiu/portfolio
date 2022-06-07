@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <a class="skipToMain" href="#mainContent">Skip to content</a>
     <nav>
         <div class="wrapper">
             <div class="flexContainer">
-                <div class="logoContainer">
+                <a href="./index.html" class="logoContainer">
                     <div class="logoImageContainer">
                         <img src="./assets/logo.png" alt="">
                     </div>
                     <p class="logo">Lester</p>
-                </div>
+                </a>
                 <ul>
                     <div class="flexContainer">
                         <li>
@@ -69,7 +70,7 @@
         </header>
         <main>
             <section class="aboutMe" id="aboutMe">
-                <div class="wrapper">
+                <div class="wrapper aboutOverallContainer">
                     <div class="flexContainer aboutContainer">
                         <div class="aboutText">
                             <h2>hello world!</h2>
@@ -77,7 +78,7 @@
                                 high-scale social media brands, I have developed a passion to create detail-oriented, accessible, and
                                 user-friendly web applications/pages</p>
                             <p>When I'm not coding, I am playing the original pokemon games, feeding into my skincare obession, and posting
-                                wholesome cat posts on my meme page <a href="https://www.instagram.com/pestosalad/?hl=en">(click here to check out mya shameless self-promo)</a>
+                                wholesome cat posts on my meme page <a href="https://www.instagram.com/pestosalad/?hl=en">(click here to check out my shameless self-promo).</a>
                             </p>
                         </div>
                         <div class="aboutContent">
@@ -87,28 +88,43 @@
                             <div>
                                 <ul>
                                     <li>
-                                        <a href="https://www.linkedin.com/in/lester-y-404010238/" class="clearButton" target="_blank" rel="noopener">
+                                        <a href="https://www.linkedin.com/in/lester-y-404010238/" class="clearButton" target="_blank" rel="noopener" aria-hidden="true">
                                             <img src="./assets/clearButton.png" alt="">
                                             <i class="fa fa-linkedin"></i>
                                         </a>
+                                        <span class="sr-only">
+                                            <a href="https://www.linkedin.com/in/lester-y-404010238/" target="_blank" rel="noopener" tabindex="-1">go to Lester Yiu's LinkedIn</a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a href="https://github.com/LesterYiu" class="clearButton" target="_blank" rel="noopener">
+                                        <a href="https://github.com/LesterYiu" class="clearButton" target="_blank" rel="noopener" aria-hidden="true">
                                             <img src="./assets/clearButton.png" alt="">
                                             <i class="fa fa-github"></i>
                                         </a>
-                                        
+                                        <span class="sr-only">
+                                            <a href="https://github.com/LesterYiu" target="_blank" rel="noopener"
+                                                tabindex="-1">go to Lester Yiu's GitHub</a>
+                                        </span>
                                     </li>
                                     <li>
-                                        <a href="mailto:lester.ws.yiu@gmail.com" class="clearButton" target="_blank" rel="noopener">
+                                        <a href="mailto:lester.ws.yiu@gmail.com" class="clearButton" target="_blank" rel="noopener" aria-hidden="true">
                                             <img src="./assets/clearButton.png" alt="">
                                             <i class="fa-solid fa-envelope"></i>
                                         </a>
+                                        <span class="sr-only">
+                                            <a href="mailto:lester.ws.yiu@gmail.com" target="_blank" rel="noopener" tabindex="-1">send an email to Lester Yiu's e-mail address</a>
+                                        </span>
                                     </li>                                   
                                 </ul>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="fossilOneContainer">
+                    <img src="./assets/fossilOne.png" alt="">
+                </div>
+                <div class="fossilTwoContainer">
+                    <img src="./assets/fossilTwo.png" alt="">
                 </div>
             </section>
         </main>

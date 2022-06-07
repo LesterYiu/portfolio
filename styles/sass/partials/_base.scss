@@ -11,8 +11,6 @@ section {
     scroll-snap-stop: always;
 }
 
-
-
 .wrapper {
     width: 75%;
     max-width: 1200px;
@@ -47,4 +45,20 @@ button {
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
+}
+
+.skipToMain {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: $primary;
+    color: $tertiary;
+    padding: 10px;
+    transition-duration: 0.2s;
+    transition-property: all;
+    z-index: 30;
+}
+
+.skipToMain:focus-within {
+    left: 0;
 }
