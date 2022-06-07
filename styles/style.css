@@ -236,6 +236,20 @@ html {
   overflow: hidden;
 }
 
+.scrollContainer {
+  overflow-y: scroll;
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+header,
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 .wrapper {
   width: 75%;
   max-width: 1200px;
@@ -296,12 +310,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-transform: capitalize;
+  color: #b8c1ec;
 }
 
 h3 {
   font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.3rem;
 }
 
 nav li {
@@ -320,8 +339,36 @@ nav .logo {
 header h2 {
   text-align: center;
   text-transform: uppercase;
+  color: #fffffe;
+  font-size: 1.1rem;
 }
 
+body {
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 nav {
   background-color: transparent;
   padding-top: 40px;
@@ -484,4 +531,75 @@ header .headerContent .arrowImageContainer img {
   background-image: url("../assets/nightskyThree.png");
   background-repeat: repeat-x;
   background-position: 0% 100%;
+}
+
+.aboutMe {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#2B271F));
+  background: linear-gradient(to bottom, #181818, #2B271F);
+}
+.aboutMe .wrapper,
+.aboutMe .flexContainer {
+  height: 100%;
+}
+.aboutMe .flexContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aboutMe .aboutText {
+  width: 60%;
+}
+.aboutMe .aboutText .aboutParagraphMiddle {
+  margin: 30px 0px 20px 0;
+}
+.aboutMe .aboutContainer {
+  width: calc(100% - 20px);
+}
+.aboutMe .aboutContent {
+  width: 40%;
+}
+.aboutMe .selfieContainer {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aboutMe .selfieContainer img {
+  height: 80%;
+  width: 80%;
+  border: 10px solid #403976;
+  border-radius: 50%;
+}
+.aboutMe ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+.aboutMe ul .clearButton {
+  width: 55px;
+  height: 55px;
+  display: block;
+  margin: 0 10px;
+  position: relative;
+}
+.aboutMe ul .clearButton img {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+.aboutMe ul .clearButton i {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
 }

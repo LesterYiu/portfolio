@@ -1,3 +1,18 @@
+.scrollContainer {
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+header,
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+
 .wrapper {
     width: 75%;
     max-width: 1200px;
