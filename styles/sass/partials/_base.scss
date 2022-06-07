@@ -1,13 +1,3 @@
-html,
-body {
-    overflow-x: hidden;
-    width: 100%;
-}
-
-body {
-    position: relative;
-}
-
 header,
 section {
     scroll-snap-align: start;
@@ -68,6 +58,8 @@ button {
 
 .scrollContainer {
     overflow-x: hidden;
+    position: relative;
+    width: 100%;
 }
 
 .scrollContainer {
