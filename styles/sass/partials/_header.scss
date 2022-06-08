@@ -4,11 +4,11 @@ header {
     position: relative;
     
     .wrapper,
-    .flexContainer {
+    .headerContainer.flexContainer {
         height: 100%;
     }
 
-    .flexContainer {
+    .headerContainer.flexContainer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
