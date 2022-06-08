@@ -2,7 +2,7 @@ header {
     background: linear-gradient(to top, #283E51, #0A2342);
     height: 100vh;
     position: relative;
-    
+
     .wrapper,
     .headerContainer.flexContainer {
         height: 85%;
@@ -72,7 +72,7 @@ header {
                 width: 100%;
                 display: block;
                 object-fit: cover;
-                filter: brightness(90%);
+                filter: brightness(80%);
             }
 }
 
@@ -89,7 +89,7 @@ header {
         display: block;
         object-fit: cover;
         transform:scaleX(-1);
-        filter: brightness(90%);
+        filter: brightness(80%);
     }
 }
 

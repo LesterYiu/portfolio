@@ -18,11 +18,13 @@ h1 {
     font-size: 1.5rem;
     text-align: center;
     text-transform: capitalize;
+    line-height: 40px;
 }
 
 h2 {
     font-size: 1.3rem;
     text-transform: capitalize;
+    line-height: 35px;
     color: $quinary;
 }
 
@@ -32,6 +34,8 @@ h3 {
 
 p {
     font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    color: $paragraph-color;
 }
 
 //Navigation Typography
@@ -50,7 +54,7 @@ nav {
     }
 }
 
-//Header Typography
+//Header-specific Typography
 
 header {
     h2 {
@@ -59,4 +63,10 @@ header {
         color: $tertiary;
         font-size: 1.1rem;
     }
+}
+
+//About-specific Typography
+
+.promo {
+    color: $aside;
 }

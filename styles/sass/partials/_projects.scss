@@ -1,6 +1,6 @@
 .myProjects {
-    background:url('../assets/cave.png'),#151F28;
-    padding: 200px 0 125px 0;
+    background:url('../assets/cave.png'),#211B16EB;
+    padding: 225px 0 125px 0;
     background-repeat: repeat-x;
 
     .projectText {
@@ -9,6 +9,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        p {
+            margin: 35px 0 25px 0; 
+        }
     }
 
     .projectInfo {
