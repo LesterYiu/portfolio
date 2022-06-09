@@ -1,12 +1,6 @@
 header {
     background: linear-gradient(to top, #283E51, #0A2342);
-    height: 100vh;
     position: relative;
-
-    .wrapper,
-    .headerContainer.flexContainer {
-        height: 85%;
-    }
 
     .headerContainer.flexContainer {
         flex-direction: column;
@@ -17,6 +11,7 @@ header {
     .headerContent {
         position: relative;
         z-index: 10;
+        padding-bottom: 250px;
 
         h1 {
             margin-bottom: 70px;

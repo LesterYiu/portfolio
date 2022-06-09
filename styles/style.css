@@ -425,6 +425,7 @@ nav {
   padding-top: 40px;
   width: 100%;
   z-index: 20;
+  padding-bottom: 100px;
 }
 nav .flexContainer {
   -webkit-box-pack: justify;
@@ -475,12 +476,7 @@ nav ul li:nth-child(3) {
 header {
   background: -webkit-gradient(linear, left bottom, left top, from(#283E51), to(#0A2342));
   background: linear-gradient(to top, #283E51, #0A2342);
-  height: 100vh;
   position: relative;
-}
-header .wrapper,
-header .headerContainer.flexContainer {
-  height: 85%;
 }
 header .headerContainer.flexContainer {
   -webkit-box-orient: vertical;
@@ -497,6 +493,7 @@ header .headerContainer.flexContainer {
 header .headerContent {
   position: relative;
   z-index: 10;
+  padding-bottom: 250px;
 }
 header .headerContent h1 {
   margin-bottom: 70px;
@@ -584,8 +581,8 @@ header .headerContent .arrowImageContainer img {
 }
 
 .aboutMe {
-  background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#34231B));
-  background: linear-gradient(to bottom, #181818, #34231B);
+  background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#1e1612));
+  background: linear-gradient(to bottom, #181818, #1e1612);
   position: relative;
   padding: 125px 0 50px 0;
 }
@@ -704,7 +701,8 @@ header .headerContent .arrowImageContainer img {
 }
 
 .myProjects {
-  background: url("../assets/caveTwo.png"), rgba(33, 27, 22, 0.9215686275);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e1612), to(#291B17));
+  background: linear-gradient(to bottom, #1e1612, #291B17);
   padding: 250px 0 125px 0;
   background-repeat: repeat-x;
   background-size: contain;
@@ -806,8 +804,8 @@ header .headerContent .arrowImageContainer img {
 }
 
 .skillsSection {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2A1C16), to(#24122F));
-  background: linear-gradient(to bottom, #2A1C16, #24122F);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2A1C16), to(#100816));
+  background: linear-gradient(to bottom, #2A1C16, #100816);
   padding: 100px 0 0 0;
 }
 .skillsSection .skillsText {
