@@ -33,9 +33,13 @@ h3 {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 0.5px;
-    color: $paragraph-color;
+    color: $tertiary;
+}
+
+button {
+    font-family: $primary-font;
 }
 
 //Navigation Typography
@@ -69,4 +73,12 @@ header {
 
 .promo {
     color: $aside;
+}
+
+//Contact-specific Typography
+
+input::placeholder,
+textarea::placeholder {
+    font-family: $secondary-font;
+    font-size: 1.2rem;
 }

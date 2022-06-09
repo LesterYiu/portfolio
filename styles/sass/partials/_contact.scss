@@ -1,11 +1,78 @@
 .contact {
-    background-color: #E5B1A6;
-    
+    position: relative;
+    padding-bottom: 150px;
+
+    h2 {
+        margin-bottom: 55px;
+    }
+
+    .contacttext p {
+        margin-bottom: 25px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .overallContactContainer {
+        width: calc(100% - 40px);
+
+        .contactText {
+                width: 60%;
+            }
+        
+            .formContainer {
+                width: 40%;
+                margin-left: 40px;
+        }
+    }
+
+    button {
+        position: relative;
+
+        p {
+            position: absolute;
+            font-size: 1rem;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        img {
+            height: 75px;
+        }
+    }
+
+    textarea,
+    input{
+        border: none;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 2.5px solid $senary;
+        width: 100%;
+        background-color: $tertiary;
+        padding: 5px 0px 5px 10px;
+    }
+
+    background: linear-gradient(to bottom, #ae6063, #e4a89b );
     .skylineBackgroundTwo {
         background: url('../assets/morningSky.png');
         height: 350px;
         width: 100%;
         transform:rotate(180deg);
         filter: brightness(50%);
+        margin-bottom: 75px;
+    }
+
+    .sunContainer {
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        bottom: 0;
+        
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
 }

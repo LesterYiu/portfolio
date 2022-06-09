@@ -3,6 +3,10 @@ body {
     overflow-x: hidden;
 }   
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width: 75%;
     max-width: 1200px;
