@@ -1,0 +1,11 @@
+.contact {
+    background-color: #E5B1A6;
+    
+    .skylineBackgroundTwo {
+        background: url('../assets/morningSky.png');
+        height: 350px;
+        width: 100%;
+        transform:rotate(180deg);
+        filter: brightness(50%);
+    }
+}

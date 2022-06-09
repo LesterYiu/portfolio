@@ -1,0 +1,16 @@
+footer {
+    background-color: black;
+    padding: 20px 0;
+    
+    p {
+        text-align: center;
+    }
+
+    img {
+        height: 35px;
+        width: 35px;
+        position: relative;
+        bottom: -10px;
+        filter: brightness(80%);
+    }
+}
