@@ -607,8 +607,8 @@ header .headerContent .arrowImageContainer img {
 .aboutMe .selfieContainer img {
   height: 80%;
   width: 80%;
-  border: 10px solid #3E3CAF;
   border-radius: 50%;
+  border: 3px double #3E3CAF;
 }
 .aboutMe ul {
   display: -webkit-box;
@@ -670,9 +670,27 @@ header .headerContent .arrowImageContainer img {
 }
 
 .myProjects {
-  background: url("../assets/cave.png"), rgba(33, 27, 22, 0.9215686275);
-  padding: 225px 0 125px 0;
+  background: url("../assets/caveTwo.png"), rgba(33, 27, 22, 0.9215686275);
+  padding: 250px 0 125px 0;
   background-repeat: repeat-x;
+  background-size: contain;
+  position: relative;
+}
+.myProjects .projectsGround {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 100%;
+}
+.myProjects .projectsGround img {
+  width: 100%;
+  height: 100%;
 }
 .myProjects .projectText {
   margin-bottom: 20px;
@@ -715,9 +733,10 @@ header .headerContent .arrowImageContainer img {
 }
 .myProjects .mockupContainer {
   border-radius: 10px;
-  background-color: #988FDF;
+  background-color: #D7D7F2;
   height: 300px;
   margin-bottom: 20px;
+  border: 3px double #3E3CAF;
 }
 .myProjects .mockupContainer img {
   width: 100%;
