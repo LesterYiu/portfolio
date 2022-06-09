@@ -608,7 +608,7 @@ header .headerContent .arrowImageContainer img {
   height: 80%;
   width: 80%;
   border-radius: 50%;
-  border: 3px double #3E3CAF;
+  border: 5px double #3E3CAF;
 }
 .aboutMe ul {
   display: -webkit-box;
@@ -680,6 +680,8 @@ header .headerContent .arrowImageContainer img {
   text-transform: capitalize;
 }
 .myProjects .projectsGround {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
   position: absolute;
   bottom: 0;
   -webkit-transform: scaleY(-1);
@@ -724,6 +726,10 @@ header .headerContent .arrowImageContainer img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.myProjects .projectInfo .rotateMockup {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
 .myProjects .mockupOneThird {
   width: 33%;
   height: 400px;
@@ -739,7 +745,7 @@ header .headerContent .arrowImageContainer img {
   background-color: #D7D7F2;
   height: 300px;
   margin-bottom: 20px;
-  border: 3px double #3E3CAF;
+  border: 5px double #3E3CAF;
 }
 .myProjects .mockupContainer img {
   width: 100%;
@@ -763,4 +769,55 @@ header .headerContent .arrowImageContainer img {
 .torchFlex .torch img {
   height: 100%;
   width: 100%;
+}
+
+.skillsSection {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2A1C16), to(#1A1818));
+  background: linear-gradient(to bottom, #2A1C16, #1A1818);
+  padding: 100px 0;
+}
+.skillsSection .skillsText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.skillsSection .skillsText p {
+  text-transform: capitalize;
+  margin-top: 35px;
+}
+.skillsSection .skillsIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skillsSection .skillsIcons .skill {
+  width: 150px;
+  margin: 100px 25px 0px 15px;
+  border: 3px solid #3E3CAF;
+  background-color: #D7D7F2;
+  border-radius: 10px;
+  padding: 25px 0;
+}
+.skillsSection .skillsIcons .skill i {
+  font-size: 2.5rem;
+  color: #3E3CAF;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.skillsSection .skillsIcons .skill p {
+  text-align: center;
+  color: #3E3CAF;
 }

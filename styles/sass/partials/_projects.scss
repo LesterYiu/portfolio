@@ -10,6 +10,7 @@
     }
 
     .projectsGround {
+        filter:brightness(80%);
         position: absolute;
         bottom: 0;
         transform:scaleY(-1);
@@ -41,6 +42,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        .rotateMockup {
+            transform:rotate(30deg);
+        }
     }
 
     .mockupOneThird {
@@ -61,7 +66,7 @@
             background-color: $paragraph-color;
             height: 300px;
             margin-bottom: 20px;
-            border: 3px double #3E3CAF;
+            border: 5px double #3E3CAF;
         
         img {
             width: 100%;
