@@ -29,11 +29,14 @@
     }
 
     .projectHeadingContainer {
-        text-align: center;
         width: 80%;
 
         p {
             margin-top: 25px;
+        }
+
+        h2 {
+            text-align: center;
         }
     }
 

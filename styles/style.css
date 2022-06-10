@@ -765,11 +765,13 @@ header .headerContent .arrowImageContainer img {
      object-fit: contain;
 }
 .myProjects .projectHeadingContainer {
-  text-align: center;
   width: 80%;
 }
 .myProjects .projectHeadingContainer p {
   margin-top: 25px;
+}
+.myProjects .projectHeadingContainer h2 {
+  text-align: center;
 }
 .myProjects .projectTools ul {
   margin: 15px 0px;
@@ -872,6 +874,7 @@ header .headerContent .arrowImageContainer img {
 .contact .overallContactContainer {
   width: calc(100% - 60px);
   margin-top: 100px;
+  width: 100%;
 }
 .contact .overallContactContainer .contactInfo {
   width: 50%;
@@ -1041,6 +1044,7 @@ footer img {
         -ms-flex-order: -2;
             order: -2;
     margin-bottom: 15px;
+    text-align: center;
   }
 
   .contact h2 {
@@ -1073,11 +1077,73 @@ footer img {
   }
   .contact ul {
     margin: 15px 0 30px 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  .contact ul .clearButton {
-    margin-right: 55px;
+}
+@media (max-width: 768px) {
+  .aboutMe .aboutContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70%;
+  }
+  .aboutMe .aboutContent ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+
+  .myProjects .projectImageContainer {
+    width: 85%;
+  }
+
+  .skillsSection .skillsText p {
+    text-align: center;
+  }
+}
+@media (max-width: 660px) {
+  .skillsSection .skillsIcons .skill {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .skillsSection .skillsIcons .skill .skillContainer {
+    width: 175px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .logoContainer p {
+    font-size: 1rem;
+    margin-left: 15px;
+  }
+
+  .contact .overallContactContainer .contactInfo {
+    text-align: center;
+  }
+
+  .skillsSection .skillsIcons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .skillsSection .skillsIcons .skill {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .skillsSection .skillsIcons .skill .skillContainer {
+    width: 135px;
+  }
+  .skillsSection .skillsIcons .skill p {
+    font-size: 1.2rem;
   }
 }
