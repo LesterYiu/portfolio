@@ -305,6 +305,10 @@ button {
   left: 0;
 }
 
+.displayNone {
+  display: none;
+}
+
 html {
   font-size: 125%;
 }
@@ -335,7 +339,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-transform: capitalize;
   line-height: 35px;
 }
@@ -591,9 +595,23 @@ header .headerContent .arrowImageContainer img {
   position: relative;
   padding: 125px 0 50px 0;
 }
+.aboutMe h2 {
+  text-align: center;
+  width: 60%;
+}
 .aboutMe .aboutOverallContainer {
   position: relative;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .aboutMe .wrapper,
 .aboutMe .flexContainer {
@@ -721,7 +739,7 @@ header .headerContent .arrowImageContainer img {
 }
 .myProjects .project {
   width: 100%;
-  margin-top: 75px;
+  margin-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,7 +790,7 @@ header .headerContent .arrowImageContainer img {
 .skillsSection {
   background: -webkit-gradient(linear, left top, left bottom, from(#1c1311), to(#100816));
   background: linear-gradient(to bottom, #1c1311, #100816);
-  padding: 100px 0 100px 0;
+  padding: 0 0 100px 0;
 }
 .skillsSection .skillsText {
   display: -webkit-box;
@@ -848,13 +866,14 @@ header .headerContent .arrowImageContainer img {
 }
 .contact .overallContactContainer {
   width: calc(100% - 60px);
+  margin-top: 100px;
 }
 .contact .overallContactContainer .contactInfo {
-  width: 60%;
+  width: 50%;
+  margin-right: 60px;
 }
 .contact .overallContactContainer .formContainer {
-  width: 40%;
-  margin-left: 60px;
+  width: 50%;
 }
 .contact .calendly {
   border-bottom: 2px solid white;
@@ -914,7 +933,8 @@ header .headerContent .arrowImageContainer img {
 }
 .contact .skylineBackgroundTwo {
   background: url("../assets/morningSky.png");
-  height: 350px;
+  background-repeat: repeat-x;
+  height: 260px;
   width: 100%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -927,11 +947,14 @@ header .headerContent .arrowImageContainer img {
   height: 150px;
   width: 150px;
   bottom: 35px;
-  left: 35%;
+  left: 25%;
 }
 .contact .sunContainer img {
   height: 100%;
   width: 100%;
+}
+.contact button {
+  margin-bottom: 25px;
 }
 
 footer {
@@ -948,4 +971,105 @@ footer img {
   bottom: -10px;
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
+}
+
+@media (max-width: 940px) {
+  .wrapper {
+    width: 80%;
+  }
+
+  .aboutMe .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutMe .aboutContent {
+    margin-top: 55px;
+    width: 60%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutMe .aboutText {
+    width: 100%;
+  }
+  .aboutMe ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutMe ul li {
+    margin: 10px 0;
+  }
+
+  .myProjects .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .myProjects .project .projectInfo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .myProjects .projectImageContainer {
+    width: 75%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 10px;
+  }
+  .myProjects .projectInfo h3 {
+    display: none;
+  }
+  .myProjects .alternateHeading {
+    display: block;
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+    margin-bottom: 15px;
+  }
+
+  .contact .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .overallContactContainer .contactInfo {
+    margin: 0;
+    width: 100%;
+  }
+  .contact .overallContactContainer .formContainer {
+    width: 100%;
+  }
+  .contact ul {
+    margin: 15px 0 30px 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact ul .clearButton {
+    margin-right: 55px;
+  }
 }

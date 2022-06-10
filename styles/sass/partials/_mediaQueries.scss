@@ -1,0 +1,99 @@
+@media (max-width: 940px) {
+
+    //Overall
+    .wrapper {
+        width: 80%;
+    }
+
+    //About Section
+
+    .aboutMe {
+        .flexContainer {
+                flex-direction: column;
+            }
+        
+            .aboutContent {
+                margin-top: 55px;
+                width: 60%;
+                order: -1;
+                display: flex;
+            }
+
+            .aboutText{
+                width: 100%;
+            }
+
+        ul {
+            flex-direction: column;
+
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+
+    // Projects Section
+
+    .myProjects {
+        .project {
+            flex-direction: column;
+            align-items: center;
+
+            .projectInfo {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .projectImageContainer {
+            width: 75%;
+            order: -1;
+            margin-bottom: 10px;
+        }
+
+        .projectInfo h3{
+            display: none;
+        }
+
+        .alternateHeading {
+            display: block;
+            order: -2;
+            margin-bottom: 15px;
+        }
+    }
+
+    //Contact Section
+    .contact {
+
+        .flexContainer {
+                flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .overallContactContainer {
+
+            .contactInfo {
+                margin: 0;
+                width: 100%;
+            }
+        
+            .formContainer {
+                width: 100%;
+            }
+        }
+
+        ul {
+            margin: 15px 0 30px 0;
+            justify-content: center;
+
+            .clearButton {
+                margin-right: 55px;
+            }
+        }
+    }
+}
