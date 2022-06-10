@@ -710,11 +710,20 @@ header .headerContent .arrowImageContainer img {
 .myProjects {
   background: -webkit-gradient(linear, left top, left bottom, from(#1e1612), to(#1c1311));
   background: linear-gradient(to bottom, #1e1612, #1c1311);
-  padding: 250px 0 125px 0;
+  padding: 150px 0 125px 0;
+}
+.myProjects .flexContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .myProjects .project {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,6 +740,16 @@ header .headerContent .arrowImageContainer img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.myProjects .projectHeadingContainer {
+  text-align: center;
+  width: 80%;
+}
+.myProjects .projectHeadingContainer p {
+  margin-top: 25px;
+}
+.myProjects .projectTools ul {
+  margin: 15px 0px;
+}
 .myProjects ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,6 +760,12 @@ header .headerContent .arrowImageContainer img {
 }
 .myProjects ul i {
   font-size: 1.8rem;
+}
+.myProjects h4 {
+  margin: 25px 0 10px 0;
+}
+.myProjects .projectTextContainer p {
+  margin: 25px 0;
 }
 
 .skillsSection {
