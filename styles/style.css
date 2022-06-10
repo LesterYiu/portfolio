@@ -372,6 +372,11 @@ nav .logo {
   font-family: "Press Start 2P", cursive;
 }
 
+.slideMenu a {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.3rem;
+}
+
 header h2 {
   text-align: center;
   text-transform: uppercase;
@@ -477,14 +482,72 @@ nav .flexContainer {
   display: block;
 }
 
-.hamburgerIconContainer {
+.hamburgerIconContainer,
+.exitIconContainer {
   width: 50px;
   height: 50px;
 }
-.hamburgerIconContainer img {
+.hamburgerIconContainer img,
+.exitIconContainer img {
   height: 100%;
   width: 100%;
   display: block;
+}
+
+.slideMenu {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  background-color: #3E3CAF;
+}
+.slideMenu .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  position: relative;
+}
+.slideMenu li {
+  margin: 35px 0;
+}
+.slideMenu li a {
+  position: relative;
+  display: inline-block;
+  color: #fffffe;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#bebed8), color-stop(50%, #bebed8), color-stop(50%, #fffffe));
+  background: linear-gradient(to right, #bebed8, #bebed8 50%, #fffffe 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  -webkit-transition: background-position 275ms ease;
+  transition: background-position 275ms ease;
+}
+.slideMenu li a:hover {
+  background-position: 0 100%;
+}
+.slideMenu .exitContent {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 header {
@@ -1125,6 +1188,10 @@ footer img {
   .logoContainer p {
     font-size: 1rem;
     margin-left: 15px;
+  }
+
+  header .headerContent {
+    padding-bottom: 200px;
   }
 
   .contact .overallContactContainer .contactInfo {

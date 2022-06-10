@@ -31,7 +31,8 @@ nav {
     }
 }
 
-.hamburgerIconContainer {
+.hamburgerIconContainer,
+.exitIconContainer {
     width: 50px;
     height: 50px;
 
@@ -39,5 +40,55 @@ nav {
         height: 100%;
         width: 100%;
         display: block;
+    }
+}
+
+.slideMenu {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    background-color: $senary;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+
+    li {
+        margin: 35px 0;
+
+        a {
+            position: relative;
+            display: inline-block;
+            color: $tertiary;
+            overflow: hidden;
+            background: linear-gradient(to right, $hover-text, $hover-text 50%, $tertiary 50%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 275ms ease;
+        }
+
+        a:hover {
+            background-position: 0 100%;
+        }
+    }
+
+    .exitContent {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }
