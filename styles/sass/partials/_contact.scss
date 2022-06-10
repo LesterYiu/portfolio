@@ -1,12 +1,13 @@
 .contact {
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 175px;
 
     h2 {
         margin-bottom: 55px;
+        color: $senary;
     }
 
-    .contacttext p {
+    .contactInfo p {
         margin-bottom: 25px;
     }
 
@@ -15,20 +16,25 @@
     }
 
     .overallContactContainer {
-        width: calc(100% - 40px);
+        width: calc(100% - 60px);
 
-        .contactText {
+        .contactInfo {
                 width: 60%;
-            }
-        
-            .formContainer {
-                width: 40%;
-                margin-left: 40px;
         }
+        
+        .formContainer {
+            width: 40%;
+            margin-left: 60px;
+        }
+    }
+
+    .calendly {
+        border-bottom: 2px solid white;
     }
 
     button {
         position: relative;
+        margin-top: 20px;
 
         p {
             position: absolute;
@@ -43,15 +49,42 @@
         }
     }
 
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        margin: 45px 0 15px 0;
+
+        .clearButton {
+            width: 55px;
+            height: 55px;
+            display: block;
+            margin-right: 20px;
+            position: relative;
+
+            img {
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+
+            i {
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+            }
+        }
+    }
+
     textarea,
     input{
         border: none;
-        margin: 10px 0;
+        margin: 15px 0;
         border-radius: 5px;
         border: 2.5px solid $senary;
         width: 100%;
         background-color: $tertiary;
-        padding: 5px 0px 5px 10px;
+        padding: 15px 0px 15px 15px;
     }
 
     background: linear-gradient(to bottom, #ae6063, #e4a89b );
@@ -68,7 +101,8 @@
         position: absolute;
         height: 150px;
         width: 150px;
-        bottom: 0;
+        bottom: 35px;
+        left: 35%;
         
         img {
             height: 100%;
