@@ -332,6 +332,13 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
+  text-transform: capitalize;
+  line-height: 35px;
+}
+
+h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
 
 p {
@@ -701,111 +708,44 @@ header .headerContent .arrowImageContainer img {
 }
 
 .myProjects {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1e1612), to(#291B17));
-  background: linear-gradient(to bottom, #1e1612, #291B17);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e1612), to(#1c1311));
+  background: linear-gradient(to bottom, #1e1612, #1c1311);
   padding: 250px 0 125px 0;
-  background-repeat: repeat-x;
-  background-size: contain;
-  position: relative;
 }
-.myProjects p {
-  text-transform: capitalize;
-}
-.myProjects .projectsGround {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
-  position: absolute;
-  bottom: 0;
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
-  -o-object-fit: cover;
-     object-fit: cover;
-  left: 0;
-  right: 0;
-  height: 200px;
+.myProjects .project {
   width: 100%;
-}
-.myProjects .projectsGround img {
-  width: 100%;
-  height: 400px;
-}
-.myProjects .projectText {
-  margin-bottom: 20px;
+  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.myProjects .projectText p {
-  margin: 35px 0 25px 0;
 }
 .myProjects .projectInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 50%;
 }
-.myProjects .projectInfo .rotateMockup {
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+.myProjects .projectImageContainer {
+  width: 50%;
 }
-.myProjects .mockupOneThird {
-  width: 33%;
-  height: 400px;
-}
-.myProjects .mockupTwoThird {
-  width: 65%;
-}
-.myProjects .mockupFull {
-  width: 100%;
-}
-.myProjects .mockupContainer {
-  border-radius: 10px;
-  background-color: #D7D7F2;
-  height: 300px;
-  margin-bottom: 20px;
-  border: 3px solid #3E3CAF;
-}
-.myProjects .mockupContainer img {
-  width: 100%;
+.myProjects .projectImageContainer img {
   height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-.torchFlex {
+.myProjects ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 20px;
 }
-.torchFlex .torch {
-  height: 50px;
-  width: 50px;
+.myProjects ul li {
+  margin: 0px 3px;
 }
-.torchFlex .torch img {
-  height: 100%;
-  width: 100%;
+.myProjects ul i {
+  font-size: 1.8rem;
 }
 
 .skillsSection {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2A1C16), to(#100816));
-  background: linear-gradient(to bottom, #2A1C16, #100816);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c1311), to(#100816));
+  background: linear-gradient(to bottom, #1c1311, #100816);
   padding: 100px 0 100px 0;
 }
 .skillsSection .skillsText {
@@ -822,9 +762,10 @@ header .headerContent .arrowImageContainer img {
 }
 .skillsSection .skillsText p {
   text-transform: capitalize;
-  margin: 35px 0;
+  margin: 35px 0 45px 0;
 }
 .skillsSection .skillsIcons {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,10 +776,19 @@ header .headerContent .arrowImageContainer img {
       flex-wrap: wrap;
 }
 .skillsSection .skillsIcons .skill {
-  width: 150px;
-  margin: 0px 25px 25px 15px;
-  border: 3px solid #3E3CAF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 33.3333333333%;
+  margin-bottom: 15px;
+}
+.skillsSection .skillsIcons .skill .skillContainer {
   background-color: #D7D7F2;
+  width: 150px;
+  border: 3px solid #3E3CAF;
   border-radius: 10px;
   padding: 25px 0;
 }

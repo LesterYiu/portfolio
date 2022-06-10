@@ -1,93 +1,36 @@
 .myProjects {
-    background:linear-gradient(to bottom, #1e1612, #291B17);
+    background:linear-gradient(to bottom, #1e1612, #1c1311);
     padding: 250px 0 125px 0;
-    background-repeat: repeat-x;
-    background-size: contain;
-    position: relative;
 
-    p {
-        text-transform: capitalize;
-    }
-
-    .projectsGround {
-        filter:brightness(80%);
-        position: absolute;
-        bottom: 0;
-        transform:scaleY(-1);
-        object-fit: cover;
-        left: 0;
-        right: 0;
-        height: 200px;
+    .project {
         width: 100%;
-
-        img {
-            width: 100%;
-            height: 400px;
-        }
-    }
-
-    .projectText {
-        margin-bottom: 20px;
+        margin-top: 100px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        p {
-            margin: 35px 0 25px 0; 
-        }
     }
 
     .projectInfo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .rotateMockup {
-            transform:rotate(30deg);
-        }
+        width: 50%;
     }
 
-    .mockupOneThird {
-        width: 33%;
-        height: 400px;
-    }
+    .projectImageContainer {
+        width: 50%;
 
-    .mockupTwoThird {
-        width: 65%;
-    }
-
-    .mockupFull {
-        width: 100%;
-    }
-
-    .mockupContainer {
-            border-radius: 10px;
-            background-color: $paragraph-color;
-            height: 300px;
-            margin-bottom: 20px;
-            border: 3px solid $senary;
-        
         img {
-            width: 100%;
             height: 100%;
+            width: 100%;
             object-fit: contain;
         }
     }
-}
 
-.torchFlex {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    ul {
+        display: flex;
+        
+        li {
+            margin: 0px 3px;
+        }
 
-    .torch {
-        height: 50px;
-        width: 50px;
-
-        img {
-            height: 100%;
-            width: 100%;
+        i {
+            font-size: 1.8rem;
         }
     }
 }
