@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    cursor: url(../assets/cursor.png), auto;
+}
+
 .wrapper {
     width: 75%;
     max-width: 1200px;

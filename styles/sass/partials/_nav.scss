@@ -9,16 +9,6 @@ nav {
         justify-content: space-between;
         align-items: center;
     }
-    
-    ul {
-        li:nth-child(-n+3) {
-            margin: 0 20px;
-        }
-        
-        li:nth-child(3) {
-            margin-right: 40px;
-        }
-    }
 }
 
 .logoContainer {

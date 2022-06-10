@@ -245,6 +245,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  cursor: url(../assets/cursor.png), auto;
+}
+
 .wrapper {
   width: 75%;
   max-width: 1200px;
@@ -442,12 +446,6 @@ nav .flexContainer {
       -ms-flex-align: center;
           align-items: center;
 }
-nav ul li:nth-child(-n+3) {
-  margin: 0 20px;
-}
-nav ul li:nth-child(3) {
-  margin-right: 40px;
-}
 
 .logoContainer {
   display: -webkit-box;
@@ -553,8 +551,8 @@ header .headerContent .arrowImageContainer img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .cloudImageContainerTwo {
@@ -572,8 +570,8 @@ header .headerContent .arrowImageContainer img {
      object-fit: cover;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .skylineBackground {
@@ -727,9 +725,12 @@ header .headerContent .arrowImageContainer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .myProjects .projectInfo {
-  width: 50%;
+  width: 45%;
 }
 .myProjects .projectImageContainer {
   width: 50%;
