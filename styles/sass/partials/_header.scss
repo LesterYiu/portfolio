@@ -129,10 +129,18 @@ header {
     img {
         height: 35px;
         width: 35px;
-        filter: brightness(85%);
     }
 
     .moonIcon {
         transform: rotate(270deg);
+
+        &:hover {
+            transform: rotate(270deg) scale(1.2);
+        }
     }
+
+    .sunIcon:hover {
+        transform: scale(1.2);
+    }
+
 }

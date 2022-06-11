@@ -322,6 +322,15 @@ button:focus {
   border: 2px dashed #fffffe;
 }
 
+.notSelected {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
 html {
   font-size: 125%;
 }
@@ -767,12 +776,18 @@ header .headerContent .arrowImageContainer img {
 .timeIconContainer img {
   height: 35px;
   width: 35px;
-  -webkit-filter: brightness(85%);
-          filter: brightness(85%);
 }
 .timeIconContainer .moonIcon {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
+}
+.timeIconContainer .moonIcon:hover {
+  -webkit-transform: rotate(270deg) scale(1.2);
+          transform: rotate(270deg) scale(1.2);
+}
+.timeIconContainer .sunIcon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .aboutMe {

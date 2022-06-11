@@ -8,8 +8,9 @@ app.allAnchorEl = document.querySelectorAll('a');
 app.allInputEl = document.querySelectorAll('input');
 app.textareaEl = document.querySelector('textarea');
 app.submitBtnEl = document.querySelector('button[type="submit"]');
-
-console.log(app.starEl);
+app.sunIconEl = document.querySelector('.sunIcon');
+app.moonIconEl = document.querySelector('.moonIcon');
+app.timeContainerEl = document.querySelector('.timeIconContainer');
 
 app.filteredAnchors = [];
 app.slideMenuAnchors = [];
@@ -92,6 +93,20 @@ app.slideMenuFunction = () => {
         }
     })
 }
+
+app.timeContainerEl.addEventListener('click', (e) => {
+    if (e.target.className === 'sunIcon') {
+        app.moonIconEl.classList.toggle('notSelected');
+    } else if (e.target.className === 'moonIcon') {
+        app.sunIconEl.classList.toggle('notSelected');
+    } else if (e.target.className === 'sunIcon notSelected') {
+        app.sunIconEl.classList.toggle('notSelected');
+        app.moonIconEl.classList.toggle('notSelected');
+    } else if (e.target.className === 'moonIcon notSelected') {
+        app.moonIconEl.classList.toggle('notSelected');
+        app.sunIconEl.classList.toggle('notSelected')
+    }
+})
 
 app.init = () => {
     app.slideMenuFunction();
