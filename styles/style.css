@@ -756,9 +756,9 @@ header .headerContent .arrowImageContainer img {
 .timeIconContainer {
   position: absolute;
   z-index: 10;
-  right: 20px;
+  right: -15px;
   bottom: 50px;
-  background-color: #fffffe;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50px;
   width: 100px;
   height: 40px;
@@ -966,6 +966,13 @@ header .headerContent .arrowImageContainer img {
   padding: 125px 0 125px 0;
 }
 
+.nightAboutBackground {
+  background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#1e1612));
+  background: linear-gradient(to bottom, #181818, #1e1612);
+  position: relative;
+  padding: 125px 0 125px 0;
+}
+
 .myProjects {
   background: -webkit-gradient(linear, left top, left bottom, from(#1e1612), to(#1c1311));
   background: linear-gradient(to bottom, #1e1612, #1c1311);
@@ -1033,8 +1040,8 @@ header .headerContent .arrowImageContainer img {
 }
 
 .skillsSection {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1c1311), to(#100816));
-  background: linear-gradient(to bottom, #1c1311, #100816);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c1311), to(#130B18));
+  background: linear-gradient(to bottom, #1c1311, #130B18);
   padding: 0 0 100px 0;
 }
 .skillsSection .skillsText {
@@ -1341,13 +1348,13 @@ footer img {
             animation: cloudAnimation linear 300s;
   }
 
-  .aboutMe .flexContainer {
+  .aboutSection .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutMe .aboutContent {
+  .aboutSection .aboutContent {
     margin-top: 55px;
     width: 60%;
     -webkit-box-ordinal-group: 0;
@@ -1357,16 +1364,16 @@ footer img {
     display: -ms-flexbox;
     display: flex;
   }
-  .aboutMe .aboutText {
+  .aboutSection .aboutText {
     width: 100%;
   }
-  .aboutMe ul {
+  .aboutSection ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .aboutMe ul li {
+  .aboutSection ul li {
     margin: 10px 0;
   }
 
@@ -1444,14 +1451,14 @@ footer img {
             animation: cloudAnimation linear 260s;
   }
 
-  .aboutMe .aboutContent {
+  .aboutSection .aboutContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 70%;
   }
-  .aboutMe .aboutContent ul {
+  .aboutSection .aboutContent ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
