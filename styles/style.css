@@ -790,17 +790,18 @@ header .headerContent .arrowImageContainer img {
           transform: scale(1.2);
 }
 
-.aboutMe {
+.aboutBaseColour {
   background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#1e1612));
   background: linear-gradient(to bottom, #181818, #1e1612);
   position: relative;
   padding: 125px 0 125px 0;
 }
-.aboutMe h2 {
+
+.aboutSection h2 {
   text-align: center;
   width: 60%;
 }
-.aboutMe .aboutOverallContainer {
+.aboutSection .aboutOverallContainer {
   position: relative;
   z-index: 10;
   display: -webkit-box;
@@ -814,16 +815,16 @@ header .headerContent .arrowImageContainer img {
       -ms-flex-align: center;
           align-items: center;
 }
-.aboutMe .wrapper,
-.aboutMe .flexContainer {
+.aboutSection .wrapper,
+.aboutSection .flexContainer {
   height: 100%;
 }
-.aboutMe .flexContainer {
+.aboutSection .flexContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.aboutMe .aboutText {
+.aboutSection .aboutText {
   width: 60%;
   height: 100%;
   display: -webkit-box;
@@ -837,19 +838,19 @@ header .headerContent .arrowImageContainer img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.aboutMe .aboutText .aboutParagraphFirst {
+.aboutSection .aboutText .aboutParagraphFirst {
   margin: 55px 0px 25px 0;
 }
-.aboutMe .aboutContainer {
+.aboutSection .aboutContainer {
   width: calc(100% - 20px);
 }
-.aboutMe .aboutContent {
+.aboutSection .aboutContent {
   width: 40%;
 }
-.aboutMe .promo {
+.aboutSection .promo {
   margin-top: 20px;
 }
-.aboutMe .selfieContainer {
+.aboutSection .selfieContainer {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -860,13 +861,13 @@ header .headerContent .arrowImageContainer img {
           justify-content: center;
   position: relative;
 }
-.aboutMe .selfieContainer img {
+.aboutSection .selfieContainer img {
   height: 80%;
   width: 80%;
   border-radius: 50%;
   border: 3px double #3E3CAF;
 }
-.aboutMe .selfieContainer .overlay {
+.aboutSection .selfieContainer .overlay {
   width: 100%;
   border-radius: 50%;
   position: absolute;
@@ -888,7 +889,7 @@ header .headerContent .arrowImageContainer img {
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-.aboutMe .selfieContainer .overlay img {
+.aboutSection .selfieContainer .overlay img {
   background: rgba(0, 0, 0, 0.6);
   height: 100%;
   width: 80%;
@@ -896,10 +897,10 @@ header .headerContent .arrowImageContainer img {
      object-fit: contain;
   border-radius: 50%;
 }
-.aboutMe .selfieContainer:hover .overlay {
+.aboutSection .selfieContainer:hover .overlay {
   opacity: 1;
 }
-.aboutMe ul {
+.aboutSection ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -908,40 +909,40 @@ header .headerContent .arrowImageContainer img {
           justify-content: center;
   margin-top: 25px;
 }
-.aboutMe ul .clearButton {
+.aboutSection ul .clearButton {
   width: 55px;
   height: 55px;
   display: block;
   margin: 0 10px;
   position: relative;
 }
-.aboutMe ul .clearButton img {
+.aboutSection ul .clearButton img {
   height: 100%;
   width: 100%;
   display: block;
 }
-.aboutMe ul .clearButton i {
+.aboutSection ul .clearButton i {
   position: absolute;
   bottom: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
 }
-.aboutMe .fossilOneContainer {
+.aboutSection .fossilOneContainer {
   position: absolute;
   top: 20%;
   left: 2%;
   height: 70px;
   width: 70px;
 }
-.aboutMe .fossilOneContainer img {
+.aboutSection .fossilOneContainer img {
   width: 100%;
   height: 100%;
   display: block;
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
 }
-.aboutMe .fossilTwoContainer {
+.aboutSection .fossilTwoContainer {
   position: absolute;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
@@ -950,12 +951,19 @@ header .headerContent .arrowImageContainer img {
   height: 70px;
   width: 70px;
 }
-.aboutMe .fossilTwoContainer img {
+.aboutSection .fossilTwoContainer img {
   width: 100%;
   height: 100%;
   display: block;
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
+}
+
+.morningAboutBackground {
+  background: -webkit-gradient(linear, left bottom, left top, from(#1c1311), to(#100816));
+  background: linear-gradient(to top, #1c1311, #100816);
+  position: relative;
+  padding: 125px 0 125px 0;
 }
 
 .myProjects {

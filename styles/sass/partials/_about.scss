@@ -1,8 +1,10 @@
-.aboutMe {
+.aboutBaseColour {
     background: linear-gradient(to bottom, #181818, #1e1612);
     position: relative;
     padding: 125px 0 125px 0;
+}
 
+.aboutSection {
     h2 {
         text-align: center;
         width: 60%;
@@ -149,4 +151,10 @@
             filter: brightness(90%);
         }
     }
+}
+
+.morningAboutBackground {
+    background: linear-gradient(to top, #1c1311, #100816);
+    position: relative;
+    padding: 125px 0 125px 0;
 }

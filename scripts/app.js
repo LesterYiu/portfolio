@@ -16,7 +16,7 @@ app.header = document.querySelector('header');
 app.headerTimeImage = document.querySelector('.headerTimeImage');
 app.cloudImageOne = document.querySelector('.cloudOne');
 app.cloudImageTwo = document.querySelector('.cloudTwo');
-app.aboutMeSection = document.querySelector('.aboutMe');
+app.aboutMeSection = document.querySelector('#aboutMe');
 
 app.filteredAnchors = [];
 app.slideMenuAnchors = [];
@@ -137,7 +137,7 @@ app.changeToMorningHeader = () => {
     app.cloudImageOne.style.filter = 'brightness(80%)';
     app.cloudImageTwo.style.filter = 'brightness(80%)';
 
-    app.aboutMeSection.style.background = 'linear-gradient(to top, #130B18, #100816)';
+    app.aboutMeSection.className = 'morningAboutBackground aboutSection';
 }
 
 app.changeToNightHeader = () => {
@@ -147,7 +147,8 @@ app.changeToNightHeader = () => {
     app.headerTimeImage.src = './assets/moon.png';
     app.headerTimeImage.style.filter = 'brightness(60%)';
     app.cloudImageOne.style.filter = 'brightness(60%)';
-    app.cloudImageTwo.style.filter = 'brightness(60%)';    
+    app.cloudImageTwo.style.filter = 'brightness(60%)';
+    app.headerSkyline.style.filter = 'brightness(100%)';    
 }
 
 app.init = () => {
