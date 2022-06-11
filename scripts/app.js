@@ -11,6 +11,12 @@ app.submitBtnEl = document.querySelector('button[type="submit"]');
 app.sunIconEl = document.querySelector('.sunIcon');
 app.moonIconEl = document.querySelector('.moonIcon');
 app.timeContainerEl = document.querySelector('.timeIconContainer');
+app.headerSkyline = document.querySelector('.skylineBackground');
+app.header = document.querySelector('header');
+app.headerTimeImage = document.querySelector('.headerTimeImage');
+app.cloudImageOne = document.querySelector('.cloudOne');
+app.cloudImageTwo = document.querySelector('.cloudTwo');
+app.aboutMeSection = document.querySelector('.aboutMe');
 
 app.filteredAnchors = [];
 app.slideMenuAnchors = [];
@@ -94,19 +100,55 @@ app.slideMenuFunction = () => {
     })
 }
 
+app.toggleSunAndMoon = () => {
+    app.sunIconEl.classList.toggle('notSelected');
+    app.moonIconEl.classList.toggle('notSelected');
+}
+
 app.timeContainerEl.addEventListener('click', (e) => {
-    if (e.target.className === 'sunIcon') {
+    if (e.target.className === 'moonIcon' && app.sunIconEl.className === 'sunIcon notSelected') {
+        app.toggleSunAndMoon();
+        app.changeToMorningHeader(); 
+    } else if (e.target.className === 'sunIcon' && app.moonIconEl.className === 'moonIcon notSelected') {
+        app.toggleSunAndMoon();
+        app.changeToNightHeader(); 
+    } else if (e.target.className === 'sunIcon notSelected') {
+        app.toggleSunAndMoon();
+        app.changeToMorningHeader();
+    } else if (e.target.className === 'moonIcon notSelected') {
+        app.toggleSunAndMoon();
+        app.changeToNightHeader(); 
+    } else if (e.target.className === 'sunIcon') {
         app.moonIconEl.classList.toggle('notSelected');
+        app.changeToMorningHeader();
     } else if (e.target.className === 'moonIcon') {
         app.sunIconEl.classList.toggle('notSelected');
-    } else if (e.target.className === 'sunIcon notSelected') {
-        app.sunIconEl.classList.toggle('notSelected');
-        app.moonIconEl.classList.toggle('notSelected');
-    } else if (e.target.className === 'moonIcon notSelected') {
-        app.moonIconEl.classList.toggle('notSelected');
-        app.sunIconEl.classList.toggle('notSelected')
+        app.changeToNightHeader(); 
     }
-})
+});
+
+app.changeToMorningHeader = () => {
+    app.headerSkyline.style.backgroundImage = `url('./assets/morningSky.png')`;
+    app.headerSkyline.style.filter = 'brightness(50%)';
+    app.headerSkyline.style.height = '240px';
+    app.header.style.background = 'linear-gradient(to top, #ae6063, #e4a89b)';
+    app.headerTimeImage.src = './assets/sun.png';
+    app.headerTimeImage.style.filter = 'brightness(100%)';
+    app.cloudImageOne.style.filter = 'brightness(80%)';
+    app.cloudImageTwo.style.filter = 'brightness(80%)';
+
+    app.aboutMeSection.style.background = 'linear-gradient(to top, #130B18, #100816)';
+}
+
+app.changeToNightHeader = () => {
+    app.headerSkyline.style.backgroundImage = `url('./assets/nightskyThree.png')`;
+    app.header.style.background = 'linear-gradient(to top, #283E51, #0A2342)';
+    app.headerSkyline.style.height = '350px';
+    app.headerTimeImage.src = './assets/moon.png';
+    app.headerTimeImage.style.filter = 'brightness(60%)';
+    app.cloudImageOne.style.filter = 'brightness(60%)';
+    app.cloudImageTwo.style.filter = 'brightness(60%)';    
+}
 
 app.init = () => {
     app.slideMenuFunction();
