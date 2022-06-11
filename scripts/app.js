@@ -8,7 +8,6 @@ app.allAnchorEl = document.querySelectorAll('a');
 app.allInputEl = document.querySelectorAll('input');
 app.textareaEl = document.querySelector('textarea');
 app.submitBtnEl = document.querySelector('button[type="submit"]');
-app.starEl = document.querySelector('.shootingStarImage');
 
 console.log(app.starEl);
 

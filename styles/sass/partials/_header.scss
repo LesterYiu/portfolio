@@ -108,5 +108,31 @@ header {
     img {
         width: 350px;
         filter: brightness(90%);
+        transform: rotate(30deg);
+    }
+}
+
+.timeIconContainer {
+    position: absolute;
+    z-index: 10;
+    right: 20px;
+    bottom: 50px;
+    background-color: $tertiary;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: rotate(90deg);
+
+    img {
+        height: 35px;
+        width: 35px;
+        filter: brightness(85%);
+    }
+
+    .moonIcon {
+        transform: rotate(270deg);
     }
 }

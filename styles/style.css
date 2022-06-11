@@ -740,6 +740,39 @@ header .headerContent .arrowImageContainer img {
   width: 350px;
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.timeIconContainer {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  bottom: 50px;
+  background-color: #fffffe;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.timeIconContainer img {
+  height: 35px;
+  width: 35px;
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+}
+.timeIconContainer .moonIcon {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 
 .aboutMe {
@@ -1279,6 +1312,12 @@ footer img {
     width: 80%;
   }
 
+  .cloudImageContainer,
+.cloudImageContainerTwo {
+    -webkit-animation: cloudAnimation linear 300s;
+            animation: cloudAnimation linear 300s;
+  }
+
   .aboutMe .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1376,6 +1415,12 @@ footer img {
   }
 }
 @media (max-width: 768px) {
+  .cloudImageContainer,
+.cloudImageContainerTwo {
+    -webkit-animation: cloudAnimation linear 260s;
+            animation: cloudAnimation linear 260s;
+  }
+
   .aboutMe .aboutContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1424,6 +1469,12 @@ footer img {
     padding-bottom: 200px;
   }
 
+  .cloudImageContainer,
+.cloudImageContainerTwo {
+    -webkit-animation: cloudAnimation linear 200s;
+            animation: cloudAnimation linear 200s;
+  }
+
   .contact .overallContactContainer .contactInfo {
     text-align: center;
   }
@@ -1442,5 +1493,11 @@ footer img {
   }
   .skillsSection .skillsIcons .skill p {
     font-size: 1.2rem;
+  }
+}
+@media (prefers-reduced-motion) {
+  .animation {
+    -webkit-animation-name: dissolve;
+            animation-name: dissolve;
   }
 }

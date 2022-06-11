@@ -5,6 +5,13 @@
         width: 80%;
     }
 
+    //Header Section
+
+    .cloudImageContainer,
+    .cloudImageContainerTwo {
+        animation: cloudAnimation linear 300s;
+    }
+
     //About Section
 
     .aboutMe {
@@ -100,6 +107,14 @@
 }
 
 @media (max-width: 768px) {
+
+    //Header Section
+
+    .cloudImageContainer,
+    .cloudImageContainerTwo {
+        animation: cloudAnimation linear 260s;
+    }
+
     //About Section
 
     .aboutMe {
@@ -171,6 +186,11 @@
         padding-bottom: 200px;
     }
 
+    .cloudImageContainer,
+    .cloudImageContainerTwo {
+        animation: cloudAnimation linear 200s;
+    }
+
     //Contact Section
     .contact {
 
@@ -198,5 +218,11 @@
                 }
             }
         }
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .animation {
+        animation-name: dissolve;
     }
 }
