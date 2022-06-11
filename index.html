@@ -22,16 +22,16 @@
                         </div>
                         <p class="logo">Lester</p>
                     </a>
-                    <button>
+                    <button id="openMenu">
                         <div class="hamburgerIconContainer">
                             <img src="./assets/hamburger.png" alt="">
                         </div>
                     </button>
                 </div>
-                <ul class="slideMenu">
+                <ul class="slideMenu hidden">
                     <div class="wrapper">
                         <li class="exitContent">
-                            <button>
+                            <button id="closeMenu">
                                 <div class="exitIconContainer">
                                     <img src="./assets/exitButton.png" alt="">
                                 </div>
@@ -385,14 +385,14 @@
                         </ul>
                     </div>
                     <div class="formContainer">
-                        <form name="contactForm">
+                        <form name="contactForm" action="https://formspree.io/f/xlezvwed" method="POST">
                             <label for="name" class="sr-only">Name</label>
-                            <input type="text" id="name" placeholder="Name">
+                            <input type="text" id="name" placeholder="Name" name="name" required="true">
 
                             <label for="email" class="sr-only">Email</label>
-                            <input type="email" id="email" placeholder="Email">
+                            <input type="email" id="email" placeholder="Email" name="email" required="true">
 
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message" name="message" required="true"></textarea>
                             
                             <button type="submit"> 
                                 <p>Submit</p>

@@ -309,6 +309,11 @@ button {
   display: none;
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 html {
   font-size: 125%;
 }
@@ -495,16 +500,17 @@ nav .flexContainer {
 }
 
 .slideMenu {
-  display: none;
   position: fixed;
   height: 100vh;
   width: 100vw;
-  top: 5px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 40;
   background-color: #3E3CAF;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .slideMenu .wrapper {
   display: -webkit-box;
@@ -547,7 +553,7 @@ nav .flexContainer {
 .slideMenu .exitContent {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
 }
 
 header {
@@ -661,7 +667,7 @@ header .headerContent .arrowImageContainer img {
   background: -webkit-gradient(linear, left top, left bottom, from(#181818), to(#1e1612));
   background: linear-gradient(to bottom, #181818, #1e1612);
   position: relative;
-  padding: 125px 0 50px 0;
+  padding: 125px 0 125px 0;
 }
 .aboutMe h2 {
   text-align: center;
@@ -794,7 +800,7 @@ header .headerContent .arrowImageContainer img {
 .myProjects {
   background: -webkit-gradient(linear, left top, left bottom, from(#1e1612), to(#1c1311));
   background: linear-gradient(to bottom, #1e1612, #1c1311);
-  padding: 150px 0 125px 0;
+  padding-bottom: 125px;
 }
 .myProjects .flexContainer {
   -webkit-box-orient: vertical;
