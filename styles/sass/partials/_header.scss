@@ -62,13 +62,15 @@ header {
     left: 15%;
     height: 100px;
     width: 250px;
-        img {
-                height: 100%;
-                width: 100%;
-                display: block;
-                object-fit: cover;
-                filter: brightness(60%);
-            }
+
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        filter: brightness(60%);
+        transform:scaleX(-1);
+    }
 }
 
 .cloudImageContainerTwo {

@@ -433,6 +433,12 @@ body {
           animation-fill-mode: forwards;
 }
 
+.cloudImageContainer,
+.cloudImageContainerTwo {
+  -webkit-animation: leftCloudAnimation linear 380s;
+          animation: leftCloudAnimation linear 380s;
+}
+
 @-webkit-keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -448,6 +454,26 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes leftCloudAnimation {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
+  }
+}
+@keyframes leftCloudAnimation {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
   }
 }
 nav {
@@ -631,6 +657,8 @@ header .headerContent .arrowImageContainer img {
      object-fit: cover;
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .cloudImageContainerTwo {
@@ -731,12 +759,43 @@ header .headerContent .arrowImageContainer img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 .aboutMe .selfieContainer img {
   height: 80%;
   width: 80%;
   border-radius: 50%;
-  border: 5px double #3E3CAF;
+}
+.aboutMe .selfieContainer .overlay {
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+.aboutMe .selfieContainer .overlay img {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+}
+.aboutMe .selfieContainer:hover .overlay {
+  opacity: 1;
 }
 .aboutMe ul {
   display: -webkit-box;
@@ -1048,6 +1107,117 @@ footer img {
   bottom: -10px;
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
+}
+
+.formSubmission nav {
+  position: absolute;
+}
+.formSubmission .formSubmitted {
+  background: -webkit-gradient(linear, left bottom, left top, from(#283E51), to(#0A2342));
+  background: linear-gradient(to top, #283E51, #0A2342);
+  position: relative;
+  height: 100vh;
+  padding: 50px 0;
+}
+.formSubmission .formSubmitted .wrapper,
+.formSubmission .formSubmitted .formContainer {
+  height: 100%;
+}
+.formSubmission .formSubmitted .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.formSubmission .formSubmitted .formContent {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 50px;
+}
+.formSubmission .formSubmitted .formContent h1 {
+  margin-bottom: 70px;
+}
+.formSubmission .formSubmitted .formContent h2 {
+  color: #fffffe;
+  text-transform: none;
+  text-align: center;
+}
+.formSubmission .formSubmitted .moonImageContainer {
+  position: absolute;
+  top: 18%;
+  left: 12%;
+  height: 150px;
+  width: 150px;
+}
+.formSubmission .formSubmitted .moonImageContainer img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+.formSubmission .formSubmitted .cloudImageContainer {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  height: 100px;
+  width: 250px;
+}
+.formSubmission .formSubmitted .cloudImageContainer img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+.formSubmission .formSubmitted .cloudImageContainerTwo {
+  position: absolute;
+  bottom: 45%;
+  right: 15%;
+  height: 90px;
+  width: 210px;
+}
+.formSubmission .formSubmitted .cloudImageContainerTwo img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+.formSubmission .formSubmitted .skylineBackground {
+  width: 100%;
+  height: 350px;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  background-image: url("../assets/nightskyThree.png");
+  background-repeat: repeat-x;
+  background-position: 0% 100%;
+}
+.formSubmission p {
+  width: 100%;
+  margin-top: 20px;
+}
+.formSubmission p a {
+  color: #B7B7B7;
+  text-align: center;
+  width: 100%;
+  display: block;
 }
 
 @media (max-width: 940px) {

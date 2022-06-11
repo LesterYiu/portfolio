@@ -2,7 +2,6 @@ const app = {};
 app.openMenuBtn = document.querySelector('#openMenu');
 app.closeMenuBtn = document.querySelector('#closeMenu');
 app.slideMenuEl = document.querySelector('.slideMenu');
-app.formEl = document.querySelector('form');
 app.submitBtn = document.querySelector('button[type="submit"]');
 
 app.slideMenuFunction = () => {

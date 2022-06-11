@@ -5,6 +5,11 @@ body {
     animation-fill-mode: forwards;
 }
 
+.cloudImageContainer,
+.cloudImageContainerTwo {
+    animation: leftCloudAnimation linear 380s;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -12,5 +17,15 @@ body {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes leftCloudAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100vw);
     }
 }
