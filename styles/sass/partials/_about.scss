@@ -60,7 +60,7 @@
             height: 80%;
             width: 80%;
             border-radius: 50%;
-            // border: 5px double $senary;
+            border: 3px double $senary;
         }
 
         .overlay {
@@ -76,6 +76,7 @@
             justify-content: center;
             align-items: center;
             z-index: 10;
+            transition: opacity 0.2s;
 
             img {
                 background: rgba(0, 0, 0, 0.6);
