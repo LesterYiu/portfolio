@@ -100,3 +100,13 @@ header {
     background-repeat: repeat-x;
     background-position: 0% 100%;
 }
+
+.shootingStarContainer{
+    position: absolute;
+    top: 0;
+
+    img {
+        width: 350px;
+        filter: brightness(90%);
+    }
+}

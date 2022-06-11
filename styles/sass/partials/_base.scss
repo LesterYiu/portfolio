@@ -71,3 +71,11 @@ button {
     opacity: 0;
     visibility: hidden;
 }
+
+button {
+    border: 2px dashed transparent;
+}
+
+button:focus {
+    border: 2px dashed $tertiary;
+}

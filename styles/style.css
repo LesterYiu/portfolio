@@ -314,6 +314,14 @@ button {
   visibility: hidden;
 }
 
+button {
+  border: 2px dashed transparent;
+}
+
+button:focus {
+  border: 2px dashed #fffffe;
+}
+
 html {
   font-size: 125%;
 }
@@ -722,6 +730,16 @@ header .headerContent .arrowImageContainer img {
   background-image: url("../assets/nightskyThree.png");
   background-repeat: repeat-x;
   background-position: 0% 100%;
+}
+
+.shootingStarContainer {
+  position: absolute;
+  top: 0;
+}
+.shootingStarContainer img {
+  width: 350px;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .aboutMe {

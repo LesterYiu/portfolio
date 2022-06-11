@@ -37,16 +37,16 @@
                                 </div>
                             </button>
                         </li>
-                        <li>
+                        <li class="slideList">
                             <a href="./index.html">home</a>
                         </li>
-                        <li>
+                        <li class="slideList">
                             <a href="#aboutMe">about me</a>
                         </li>
-                        <li>
+                        <li class="slideList">
                             <a href="#myProjects">projects</a>
                         </li>
-                        <li>
+                        <li class="slideList">
                             <a href="#contact">contact</a>
                         </li>
                     </div>
@@ -72,6 +72,9 @@
         </div>
         <div class="cloudImageContainerTwo">
             <img src="./assets/cloud.png" alt="">
+        </div>
+        <div class="shootingStarContainer">
+            <img class="shootingStarImage" src="./assets/shootingStar.gif" alt="">
         </div>
         <div class="skylineBackground">
         </div>
@@ -394,9 +397,8 @@
                     </div>
                     <div class="formContainer">
                         <form name="contactForm" action="https://submit-form.com/VDPFBAfz" method="POST">
-                            <input type="hidden" name="_redirect" value="https://lesteryiu.com/" />
-                            <input type="hidden" name="_append" value="false" />
-
+                            <input type="hidden" name="_redirect" value="https://lesteryiu.com/pages/formsubmitted" aria-hidden="true"/>
+                            <input type="hidden" name="_append" value="false" aria-hidden="true"/>
                             <label for="name" class="sr-only">Name</label>
                             <input type="text" id="name" placeholder="Name" name="name" required="true">
 
