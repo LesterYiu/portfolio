@@ -16,9 +16,9 @@
 </head>
 <body>
     <a class="skipToMain" href="#aboutMe">Skip to content</a>
-    <header>
+    <header role="banner">
         <div class="wrapper">
-            <nav>
+            <nav role="navigation">
                 <div class="flexContainer">
                     <a href="./index.html" class="logoContainer">
                         <div class="logoImageContainer">
@@ -68,10 +68,10 @@
                 </div>
             </div>
         </div>
-        <div class="timeIconContainer">
+        <button role="switch" class="timeIconContainer">
             <img class="sunIcon" src="./assets/sunIcon.png" alt="">
             <img class="moonIcon" src="./assets/moonIcon.png" alt="">
-        </div>
+        </button>
         <div class="moonImageContainer">
             <img class="headerTimeImage" src="./assets/moon.png" alt="">
         </div>
@@ -88,7 +88,7 @@
         </div>
 
     </header>
-    <main>
+    <main role="main">
         <section class="aboutBaseColour aboutSection" id="aboutMe">
             <div class="wrapper aboutOverallContainer">
                 <h2>hello world!</h2>
@@ -103,7 +103,7 @@
                         <a class="promo" href="https://www.instagram.com/pestosalad/?hl=en" target="_blank" rel="noopener">(click here to check out my shameless self-promo).</a>
                     </div>
                     <div class="aboutContent">
-                        <div class="selfieContainer">
+                        <div class="selfieContainer" tabindex="0">
                             <img src="./assets/selfie.jpg" alt="Lester Yiu, a front-end web developer">
                             <div class="overlay">
                                 <img src="./assets/personalImage.png" alt="a pixelated drawing of Lester Yiu">
@@ -405,7 +405,7 @@
                         </ul>
                     </div>
                     <div class="formContainer">
-                        <form name="contactForm" action="https://submit-form.com/VDPFBAfz" method="POST">
+                        <form role="form" name="contactForm" action="https://submit-form.com/VDPFBAfz" method="POST">
                             <input type="hidden" name="_redirect" value="https://lesteryiu.com/pages/formsubmitted" aria-hidden="true"/>
                             <input type="hidden" name="_append" value="false" aria-hidden="true"/>
                             <label for="name" class="sr-only">Name</label>
@@ -429,7 +429,7 @@
                 <img class="contactTimeImage" src="./assets/sun.png" alt="">
             </div>
         </section>
-        <footer>
+        <footer role="contentInfo">
             <div class="wrapper">
                 <p>Created & designed with <span class="sr-only">love</span><img src="./assets/purpleHeart.png" alt=""> by Lester Yiu</p>
             </div>

@@ -89,7 +89,8 @@
             }
         }
 
-        &:hover .overlay {
+        &:hover .overlay,
+        &:focus .overlay {
             opacity: 1;
         }
     }

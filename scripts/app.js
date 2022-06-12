@@ -21,6 +21,7 @@ app.timeContainerEl = document.querySelector('.timeIconContainer');
 
 // about elements
 app.aboutMeSection = document.querySelector('#aboutMe');
+app.selfieContainer = document.querySelector('.selfieContainer');
 
 // project elements
 
@@ -36,6 +37,7 @@ app.submitBtnEl = document.querySelector('button[type="submit"]');
 app.contactSkyline = document.querySelector('.skylineBackgroundTwo');
 app.contactSection = document.querySelector('.contact');
 app.contactTimeImage = document.querySelector('.contactTimeImage');
+app.contactContent = document.querySelector('.overallContactContainer');
 
 // filtered anchor arrays
 app.filteredAnchors = [];
@@ -66,8 +68,8 @@ app.turnOffTabIndex = () => {
     }
 
     app.submitBtnEl.tabIndex = -1;
-
     app.textareaEl.tabIndex = -1;
+    app.selfieContainer.tabIndex = -1;
 }
 
 app.turnOnTabIndex = () => {
@@ -80,6 +82,7 @@ app.turnOnTabIndex = () => {
     }
     app.submitBtnEl.tabIndex = 0;
     app.textareaEl.tabIndex = 0;
+    app.selfieContainer.tabIndex = 0;
 
     for (let i in app.slideMenuAnchors) {
         app.slideMenuAnchors[i].tabIndex = 0;
@@ -171,6 +174,8 @@ app.changeToMorningHeader = () => {
     app.contactSkyline.style.backgroundImage = `url('./assets/nightskyThree.png')`;
     app.contactSkyline.style.height = '350px';
     app.contactSkyline.style.filter = 'brightness(100%)';
+    app.contactSkyline.style.margin = '0';
+    app.contactContent.style.margin = '0';
     app.contactTimeImage.src ='./assets/moon.png';
     app.contactTimeImage.style.filter = 'brightness(60%)';
 }
@@ -202,6 +207,8 @@ app.changeToNightHeader = () => {
     app.contactSkyline.style.backgroundImage = `url('./assets/morningSky.png')`;
     app.contactSkyline.style.height = '240px';
     app.contactSkyline.style.filter = 'brightness(50%)';
+    app.contactSkyline.style.marginBottom = '75px';
+    app.contactContent.style.marginTop = '100px';
     app.contactTimeImage.src ='./assets/sun.png';
     app.contactTimeImage.style.filter = 'brightness(100%)';
 }
