@@ -184,15 +184,19 @@
 
     header .headerContent {
         padding-bottom: 200px;
-        
+
         .arrowImageContainer {
-                margin: 10px auto 0px auto
+            margin: 10px auto 0px auto
         }
     }
 
     .cloudImageContainer,
     .cloudImageContainerTwo {
         animation: cloudAnimation linear 200s;
+    }
+
+    .timeIconContainer {
+        width: 115px;
     }
 
     //Contact Section

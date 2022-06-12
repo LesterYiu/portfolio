@@ -1508,6 +1508,10 @@ footer img {
             animation: cloudAnimation linear 200s;
   }
 
+  .timeIconContainer {
+    width: 115px;
+  }
+
   .contact .overallContactContainer .contactInfo {
     text-align: center;
   }

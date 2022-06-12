@@ -70,6 +70,7 @@ app.turnOffTabIndex = () => {
     app.submitBtnEl.tabIndex = -1;
     app.textareaEl.tabIndex = -1;
     app.selfieContainer.tabIndex = -1;
+    app.timeContainerEl.tabIndex = -1;
 }
 
 app.turnOnTabIndex = () => {
@@ -83,6 +84,7 @@ app.turnOnTabIndex = () => {
     app.submitBtnEl.tabIndex = 0;
     app.textareaEl.tabIndex = 0;
     app.selfieContainer.tabIndex = 0;
+    app.timeContainerEl.tabIndex = 0;
 
     for (let i in app.slideMenuAnchors) {
         app.slideMenuAnchors[i].tabIndex = 0;
