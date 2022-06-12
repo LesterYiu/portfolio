@@ -1467,6 +1467,9 @@ footer img {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
+  .aboutSection .fossilTwoContainer {
+    top: 25%;
+  }
 
   .myProjects .projectImageContainer {
     width: 85%;
@@ -1509,13 +1512,19 @@ footer img {
   }
 
   .timeIconContainer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .timeIconContainer .sunIcon {
+    margin-right: 10px;
   }
 
-  .contact .overallContactContainer .contactInfo {
-    text-align: center;
+  .aboutSection .fossilTwoContainer {
+    top: 20%;
+    right: 0%;
   }
 
   .skillsSection .skillsIcons {
@@ -1532,6 +1541,10 @@ footer img {
   }
   .skillsSection .skillsIcons .skill p {
     font-size: 1.2rem;
+  }
+
+  .contact .overallContactContainer .contactInfo {
+    text-align: center;
   }
 }
 @media (prefers-reduced-motion) {
