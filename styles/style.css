@@ -541,6 +541,9 @@ nav .flexContainer {
       -ms-flex-align: center;
           align-items: center;
 }
+nav .slideButton {
+  padding: 0;
+}
 
 .logoContainer {
   display: -webkit-box;
