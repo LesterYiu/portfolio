@@ -1509,7 +1509,9 @@ footer img {
   }
 
   .timeIconContainer {
-    width: 115px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .contact .overallContactContainer .contactInfo {
