@@ -126,7 +126,7 @@ app.toggleSunAndMoon = () => {
     app.moonIconEl.classList.toggle('notSelected');
 }
 
-//toggle day/night
+//toggle day/night for click
 app.timeContainerEl.addEventListener('click', (e) => {
     if (e.target.className === 'moonIcon' && app.sunIconEl.className === 'sunIcon notSelected') {
         app.toggleSunAndMoon();
@@ -148,6 +148,32 @@ app.timeContainerEl.addEventListener('click', (e) => {
         app.changeToNightHeader(); 
     }
 });
+
+//toggle day/night for keydown
+
+app.timeContainerEl.addEventListener('keydown', (e) => {
+    if (e.code === 'Enter') {
+        if (app.moonIconEl.className === 'moonIcon' && app.sunIconEl.className === 'sunIcon notSelected') {
+            app.toggleSunAndMoon();
+            app.changeToMorningHeader(); 
+        } else if (app.sunIconEl.className === 'sunIcon' && app.moonIconEl.className === 'moonIcon notSelected') {
+            app.toggleSunAndMoon();
+            app.changeToNightHeader(); 
+        } else if (app.sunIconEl.className === 'sunIcon notSelected') {
+            app.toggleSunAndMoon();
+            app.changeToMorningHeader();
+        } else if (app.moonIconEl.className === 'moonIcon notSelected') {
+            app.toggleSunAndMoon();
+            app.changeToNightHeader(); 
+        } else if (app.sunIconEl.className === 'sunIcon') {
+            app.moonIconEl.classList.toggle('notSelected');
+            app.changeToMorningHeader();
+        } else if (app.moonIconEl.className === 'moonIcon') {
+            app.sunIconEl.classList.toggle('notSelected');
+            app.changeToNightHeader(); 
+        }
+    }
+})
 
 app.changeToMorningHeader = () => {
     // header changes to morning
