@@ -39,6 +39,12 @@ app.contactSection = document.querySelector('.contact');
 app.contactTimeImage = document.querySelector('.contactTimeImage');
 app.contactContent = document.querySelector('.overallContactContainer');
 
+// scroll elements
+
+app.revealEls = document.querySelectorAll('.reveal')
+app.revealLeftEls = document.querySelectorAll('.revealLeft');
+app.totalWindowHeight = window.innerHeight;
+
 // filtered anchor arrays
 app.filteredAnchors = [];
 app.slideMenuAnchors = [];
@@ -241,10 +247,29 @@ app.changeToNightHeader = () => {
     app.contactTimeImage.style.filter = 'brightness(100%)';
 }
 
+//scroll transition
+
+app.scrollRevealUpward = () => {    
+    for (let i = 0; i < app.revealEls.length; i++) {
+        const totalWindowHeight = window.innerHeight;
+        const elementTop = app.revealEls[i].getBoundingClientRect().top;
+        const elementVisible = 95;
+
+        if (elementTop < totalWindowHeight - elementVisible) {
+            app.revealEls[i].classList.add("active");
+        } else {
+            app.revealEls[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", app.scrollRevealUpward);
+
 app.init = () => {
     app.slideMenuFunction();
     app.filterTabIndex();
     app.filterSlideAnchor();
 }
+
 
 app.init();
