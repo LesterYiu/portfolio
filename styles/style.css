@@ -634,6 +634,9 @@ nav .slideButton {
   right: 0;
   top: 5px;
 }
+.slideMenu .closeMenu {
+  padding: 0;
+}
 
 header {
   background: -webkit-gradient(linear, left bottom, left top, from(#283E51), to(#0A2342));
