@@ -245,6 +245,16 @@
             text-align: center;
         }
     }
+
+    //Form Submission
+
+    .formContent {
+        margin-top: 50px;
+    }
+
+        .formSubmission .formSubmitted .formContent h1 {
+            margin-bottom: 35px;
+        }
 }
 
 @media (prefers-reduced-motion) {

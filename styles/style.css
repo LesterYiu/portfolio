@@ -1332,11 +1332,11 @@ footer img {
   background-repeat: repeat-x;
   background-position: 0% 100%;
 }
-.formSubmission p {
+.formSubmission .formRedirect {
   width: 100%;
   margin-top: 20px;
 }
-.formSubmission p a {
+.formSubmission .formRedirect a {
   color: #B7B7B7;
   text-align: center;
   width: 100%;
@@ -1551,6 +1551,14 @@ footer img {
 
   .contact .overallContactContainer .contactInfo {
     text-align: center;
+  }
+
+  .formContent {
+    margin-top: 50px;
+  }
+
+  .formSubmission .formSubmitted .formContent h1 {
+    margin-bottom: 35px;
   }
 }
 @media (prefers-reduced-motion) {
