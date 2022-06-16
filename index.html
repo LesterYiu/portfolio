@@ -26,7 +26,7 @@
                         </div>
                         <p class="logo">Lester</p>
                     </a>
-                    <button id="openMenu" class="slideButton">
+                    <button role="button" aria-label="menu" id="openMenu" class="slideButton">
                         <div class="hamburgerIconContainer">
                             <img src="./assets/hamburger.png" alt="">
                         </div>
@@ -35,7 +35,7 @@
                 <ul class="slideMenu hidden">
                     <div class="wrapper">
                         <li class="exitContent">
-                            <button id="closeMenu" class="closeMenu">
+                            <button role="button" aria-label="close menu" id="closeMenu" class="closeMenu">
                                 <div class="exitIconContainer">
                                     <img src="./assets/exitButton.png" alt="">
                                 </div>
@@ -60,15 +60,15 @@
                 <div class="headerContent">
                     <h1>a front-end developer & an aspiring full-stack developer</h1>
                     <h2>scroll to find out more about me</h2>
-                    <a href="#aboutMe">
+                    <a href="#aboutMe" aria-label="navigation">
                         <div class="arrowImageContainer">
-                            <img src="./assets/arrow.png">
+                            <img src="./assets/arrow.png" alt="">
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-        <button aria-pressed="false" role="switch" class="timeIconContainer">
+        <button aria-label="toggle" class="timeIconContainer">
             <img class="sunIcon" src="./assets/sunIcon.png" alt="">
             <img class="moonIcon" src="./assets/moonIcon.png" alt="">
         </button>
@@ -112,28 +112,23 @@
                         <div>
                             <ul>
                                 <li>
-                                    <a href="https://www.linkedin.com/in/lester-y-404010238/" class="clearButton" target="_blank" rel="noopener" aria-hidden="true">
+                                    <a href="https://www.linkedin.com/in/lester-y-404010238/" class="clearButton" target="_blank" rel="noopener">
                                         <img src="./assets/clearButton.png" alt="">
-                                        <i class="fa fa-linkedin"></i>
+                                        <span class="sr-only">go to Lester Yiu's LinkedIn</span>
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
                                     </a>
-                                    <span class="sr-only">
-                                        <a href="https://www.linkedin.com/in/lester-y-404010238/" target="_blank" rel="noopener" tabindex="-1">go to Lester Yiu's LinkedIn</a>
-                                    </span>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/LesterYiu" class="clearButton" target="_blank" rel="noopener" aria-hidden="true">
+                                    <a href="https://github.com/LesterYiu" class="clearButton" target="_blank" rel="noopener">
                                         <img src="./assets/clearButton.png" alt="">
-                                        <i class="fa fa-github"></i>
+                                        <span class="sr-only">go to Lester Yiu's GitHub</span>
+                                        <i class="fa fa-github" aria-hidden="true"></i>
                                     </a>
-                                    <span class="sr-only">
-                                        <a href="https://github.com/LesterYiu" target="_blank" rel="noopener"
-                                            tabindex="-1">go to Lester Yiu's GitHub</a>
-                                    </span>
                                 </li>
                                 <li>
-                                    <a href="mailto:lester.ws.yiu@gmail.com" class="clearButton" target="_blank" rel="noopener" aria-hidden="true">
+                                    <a href="mailto:lester.ws.yiu@gmail.com" class="clearButton" target="_blank" rel="noopener" aria-label="email">
                                         <img src="./assets/clearButton.png" alt="">
-                                        <i class="fa-solid fa-envelope"></i>
+                                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                     </a>
                                     <span class="sr-only">
                                         <a href="mailto:lester.ws.yiu@gmail.com" target="_blank" rel="noopener" tabindex="-1">send an email to Lester Yiu's e-mail address</a>
@@ -373,40 +368,29 @@
                         <p>Alternatively, you can get in contact with me via the following options below!</p>
                         <ul>
                             <li>
-                                <a href="https://www.linkedin.com/in/lester-y-404010238/" class="clearButton" target="_blank" rel="noopener"
-                                    aria-hidden="true">
+                                <a href="https://www.linkedin.com/in/lester-y-404010238/" class="clearButton" target="_blank" rel="noopener">
                                     <img src="./assets/clearButton.png" alt="">
-                                    <i class="fa fa-linkedin"></i>
+                                    <span class="sr-only">Go to Lester Yiu's LinkedIn</span>
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </a>
-                                <span class="sr-only">
-                                    <a href="https://www.linkedin.com/in/lester-y-404010238/" target="_blank" rel="noopener" tabindex="-1">go to
-                                        Lester Yiu's LinkedIn</a>
-                                </span>
                             </li>
                             <li>
-                                <a href="https://github.com/LesterYiu" class="clearButton" target="_blank" rel="noopener" aria-hidden="true">
+                                <a href="https://github.com/LesterYiu" class="clearButton" target="_blank" rel="noopener">
                                     <img src="./assets/clearButton.png" alt="">
-                                    <i class="fa fa-github"></i>
+                                    <span class="sr-only">Go to Lester Yiu's GitHub</span>
+                                    <i class="fa fa-github" aria-hidden="true"></i>
                                 </a>
-                                <span class="sr-only">
-                                    <a href="https://github.com/LesterYiu" target="_blank" rel="noopener" tabindex="-1">go to Lester Yiu's
-                                        GitHub</a>
-                                </span>
                             </li>
                             <li>
-                                <a href="mailto:lester.ws.yiu@gmail.com" class="clearButton" target="_blank" rel="noopener" aria-hidden="true">
+                                <a href="mailto:lester.ws.yiu@gmail.com" class="clearButton" target="_blank" rel="noopener" aria-label="email">
                                     <img src="./assets/clearButton.png" alt="">
-                                    <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                 </a>
-                                <span class="sr-only">
-                                    <a href="mailto:lester.ws.yiu@gmail.com" target="_blank" rel="noopener" tabindex="-1">send an email to
-                                        Lester Yiu's e-mail address</a>
-                                </span>
                             </li>
                         </ul>
                     </div>
                     <div class="formContainer">
-                        <form role="form" name="contactForm" action="https://submit-form.com/VDPFBAfz" method="POST">
+                        <form aria-label="form" name="contactForm" action="https://submit-form.com/VDPFBAfz" method="POST">
                             <input type="hidden" name="_redirect" value="https://lesteryiu.com/pages/formsubmitted" aria-hidden="true"/>
                             <input type="hidden" name="_append" value="false" aria-hidden="true"/>
                             <label for="name" class="sr-only">Name</label>
@@ -430,7 +414,7 @@
                 <img class="contactTimeImage" src="./assets/sun.png" alt="">
             </div>
         </section>
-        <footer role="contentInfo">
+        <footer role="contentinfo">
             <div class="wrapper">
                 <p>Created & designed with <span class="sr-only">love</span><img src="./assets/purpleHeart.png" alt=""> by Lester Yiu</p>
             </div>
