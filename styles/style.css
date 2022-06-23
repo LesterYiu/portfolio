@@ -1089,6 +1089,9 @@ header .headerContent .arrowImageContainer img {
 .myProjects .projectTextContainer p {
   margin: 25px 0;
 }
+.myProjects .siteLinks {
+  text-decoration: underline;
+}
 
 .skillsSection {
   background: -webkit-gradient(linear, left top, left bottom, from(#1c1311), to(#130B18));
