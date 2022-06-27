@@ -18,6 +18,7 @@ app.cloudImageTwo = document.querySelector('.cloudTwo');
 app.sunIconEl = document.querySelector('.sunIcon');
 app.moonIconEl = document.querySelector('.moonIcon');
 app.timeContainerEl = document.querySelector('.timeIconContainer');
+app.shootingStarEl = document.querySelector('.shootingStarImage');
 
 // about elements
 app.aboutMeSection = document.querySelector('#aboutMe');
@@ -191,6 +192,7 @@ app.changeToMorningHeader = () => {
     app.headerTimeImage.src = './assets/sun.png';
     app.cloudImageOne.className = 'cloudOne cloudOneMorning';
     app.cloudImageTwo.className = 'cloudTwo cloudTwoMorning';
+    app.shootingStarEl.className = 'shootingStarImage displayNone';
 
     // about section
     app.aboutMeSection.className = 'aboutSection morningAboutBackground';
@@ -219,6 +221,7 @@ app.changeToNightHeader = () => {
     app.headerSkyline.className = 'skylineBackground headerSkylineNight';
     app.cloudImageOne.className = 'cloudOne cloudOneNight';
     app.cloudImageTwo.className = 'cloudTwo cloudTwoNight';
+    app.shootingStarEl.className = 'shootingStarImage';
 
     // about section
     app.aboutMeSection.className = 'nightAboutBackground aboutSection';
