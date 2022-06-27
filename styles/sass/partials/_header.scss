@@ -47,13 +47,13 @@ header {
     left: 12%;
     height: 150px;
     width: 150px;
+}
 
-    img {
-        height: 100%;
-        width: 100%;
-        display: block;
-        filter: brightness(60%);
-    }
+.headerTimeImage {
+    height: 100%;
+    width: 100%;
+    display: block;
+    filter: brightness(60%);
 }
 
 .cloudImageContainer{
@@ -62,15 +62,6 @@ header {
     left: 15%;
     height: 100px;
     width: 250px;
-
-    img {
-        height: 100%;
-        width: 100%;
-        display: block;
-        object-fit: cover;
-        filter: brightness(60%);
-        transform:scaleX(-1);
-    }
 }
 
 .cloudImageContainerTwo {
@@ -79,15 +70,16 @@ header {
     right: 15%;
     height: 90px;
     width: 210px;
+}
 
-    img {
-        height: 100%;
-        width: 100%;
-        display: block;
-        object-fit: cover;
-        transform:scaleX(-1);
-        filter: brightness(60%);
-    }
+.cloudOne,
+.cloudTwo {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    filter: brightness(60%);
+    transform: scaleX(-1);
 }
 
 .skylineBackground {
@@ -143,4 +135,56 @@ header {
         transform: scale(1.2);
     }
 
+}
+
+// changeToMorning Styles
+.headerBackgroundMorning {
+    background-image: url('../assets/morningSky.png');
+    filter: brightness(50%);
+    height: 240px;
+}
+
+.headerMorning {
+    background: linear-gradient(to top, #ae6063, #e4a89b);
+}
+
+.headerTimeImageMorning {
+    filter: brightness(100%);
+}
+
+.cloudOneMorning {
+    filter: brightness(80%);
+}
+
+.cloudTwoMorning {
+    filter: brightness(80%);
+}
+
+
+// changeToNight styles
+
+.headerBackgroundNight {
+    background-image: url('../assets/nightskyThree.png');
+    height: 350px;
+    filter: brightness(100%);
+}
+
+.headerNight {
+    background: linear-gradient(to top, #283E51, #0A2342);
+}
+
+.headerSkylineNight {
+    filter: brightness(100%);
+}
+
+.headerTimeImageNight {
+    filter: brightness(60%);
+}
+
+.cloudOneNight {
+    filter: brightness(60%);
+}
+
+.cloudTwoNight {
+    filter: brightness(60%);
 }

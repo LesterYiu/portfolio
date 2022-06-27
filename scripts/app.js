@@ -185,66 +185,58 @@ app.timeContainerEl.addEventListener('keydown', (e) => {
 
 app.changeToMorningHeader = () => {
     // header changes to morning
-    app.headerSkyline.style.backgroundImage = `url('./assets/morningSky.png')`;
-    app.headerSkyline.style.filter = 'brightness(50%)';
-    app.headerSkyline.style.height = '240px';
-    app.header.style.background = 'linear-gradient(to top, #ae6063, #e4a89b)';
+    app.headerSkyline.className = 'skylineBackground headerBackgroundMorning';
+    app.header.className = 'headerMorning';
+    app.headerTimeImage.className = 'headerTimeImage headerTimeImageMorning';
     app.headerTimeImage.src = './assets/sun.png';
-    app.headerTimeImage.style.filter = 'brightness(100%)';
-    app.cloudImageOne.style.filter = 'brightness(80%)';
-    app.cloudImageTwo.style.filter = 'brightness(80%)';
+    app.cloudImageOne.className = 'cloudOne cloudOneMorning';
+    app.cloudImageTwo.className = 'cloudTwo cloudTwoMorning';
 
     // about section
-    app.aboutMeSection.className = 'morningAboutBackground aboutSection';
+    app.aboutMeSection.className = 'aboutSection morningAboutBackground';
 
     // project section
-    app.projectSection.style.background = 'linear-gradient(to bottom, #1c1311, #1B1211)';
+    app.projectSection.className = 'myProjects myProjectsMorning';
 
     //skills section
-    app.skillsSection.style.background = 'linear-gradient(to top, #181818, #1B1211)'
+    app.skillsSection.className = 'skillsSection skillsSectionMorning';
 
     // contact section changes to night
-    app.contactSection.style.background = 'linear-gradient(to top, #283E51, #0A2342)';
-    app.contactSkyline.style.backgroundImage = `url('./assets/nightskyThree.png')`;
-    app.contactSkyline.style.height = '350px';
-    app.contactSkyline.style.filter = 'brightness(100%)';
-    app.contactSkyline.style.margin = '0';
-    app.contactContent.style.margin = '0';
+    app.contactSection.className = 'contact contactMorning';
+    app.contactSkyline.className = 'skylineBackgroundTwo skylineBackgroundTwoMorning';
+    app.contactContent.className = 'flexContainer overallContactContainer reveal contactContentMorning';
+    app.contactTimeImage.className = 'contactTimeImage contactTimeImageMorning';    
     app.contactTimeImage.src ='./assets/moon.png';
-    app.contactTimeImage.style.filter = 'brightness(60%)';
 }
 
 app.changeToNightHeader = () => {
 
     //header changes from morning to night
-    app.header.style.background = 'linear-gradient(to top, #283E51, #0A2342)';    
-    app.headerSkyline.style.backgroundImage = `url('./assets/nightskyThree.png')`;
-    app.headerSkyline.style.height = '350px';
-    app.headerSkyline.style.filter = 'brightness(100%)';       
+    app.headerSkyline.className = 'skylineBackground headerBackgroundNight';
+    app.header.className = 'headerNight';
+    app.headerTimeImage.className = 'headerTimeImage headerTimeImageNight';
     app.headerTimeImage.src = './assets/moon.png';
-    app.headerTimeImage.style.filter = 'brightness(60%)';
-    app.cloudImageOne.style.filter = 'brightness(60%)';
-    app.cloudImageTwo.style.filter = 'brightness(60%)';
+    app.headerSkyline.className = 'skylineBackground headerSkylineNight';
+    app.cloudImageOne.className = 'cloudOne cloudOneNight';
+    app.cloudImageTwo.className = 'cloudTwo cloudTwoNight';
 
     // about section
     app.aboutMeSection.className = 'nightAboutBackground aboutSection';
 
     // project section
-    app.projectSection.style.background = 'linear-gradient(to bottom, #1e1612, #1A1211)';
+    
+    app.projectSection.className = 'myProjects myProjectsNight';
 
     // skills section
-
-    app.skillsSection.style.background = 'linear-gradient(to bottom, #1A1211, #130B18)';
+    app.skillsSection.className = 'skillsSection skillsSectionNight';
 
     // contact section changes from night to morning
-    app.contactSection.style.background = 'linear-gradient(to top, #ae6063, #e4a89b)';
-    app.contactSkyline.style.backgroundImage = `url('./assets/morningSky.png')`;
-    app.contactSkyline.style.height = '240px';
-    app.contactSkyline.style.filter = 'brightness(50%)';
-    app.contactSkyline.style.marginBottom = '75px';
-    app.contactContent.style.marginTop = '100px';
+    app.contactSection.className = 'contact contactNight';
+    app.contactSkyline.className = 'skylineBackgroundTwo skylineBackgroundTwoNight';
+    app.contactContent.className = 'flexContainer overallContactContainer reveal contactContentNight';
+    app.contactTimeImage.className = 'contactTimeImage contactTimeImageNight';    
     app.contactTimeImage.src ='./assets/sun.png';
-    app.contactTimeImage.style.filter = 'brightness(100%)';
+
 }
 
 //scroll transition

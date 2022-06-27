@@ -735,7 +735,8 @@ header .headerContent .arrowImageContainer img {
   height: 150px;
   width: 150px;
 }
-.moonImageContainer img {
+
+.headerTimeImage {
   height: 100%;
   width: 100%;
   display: block;
@@ -750,17 +751,6 @@ header .headerContent .arrowImageContainer img {
   height: 100px;
   width: 250px;
 }
-.cloudImageContainer img {
-  height: 100%;
-  width: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
 
 .cloudImageContainerTwo {
   position: absolute;
@@ -769,16 +759,18 @@ header .headerContent .arrowImageContainer img {
   height: 90px;
   width: 210px;
 }
-.cloudImageContainerTwo img {
+
+.cloudOne,
+.cloudTwo {
   height: 100%;
   width: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .skylineBackground {
@@ -839,6 +831,65 @@ header .headerContent .arrowImageContainer img {
 .timeIconContainer .sunIcon:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.headerBackgroundMorning {
+  background-image: url("../assets/morningSky.png");
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  height: 240px;
+}
+
+.headerMorning {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ae6063), to(#e4a89b));
+  background: linear-gradient(to top, #ae6063, #e4a89b);
+}
+
+.headerTimeImageMorning {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.cloudOneMorning {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.cloudTwoMorning {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.headerBackgroundNight {
+  background-image: url("../assets/nightskyThree.png");
+  height: 350px;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.headerNight {
+  background: -webkit-gradient(linear, left bottom, left top, from(#283E51), to(#0A2342));
+  background: linear-gradient(to top, #283E51, #0A2342);
+}
+
+.headerSkylineNight {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+.headerTimeImageNight {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+.cloudOneNight {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+.cloudTwoNight {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .aboutBaseColour {
@@ -1093,6 +1144,16 @@ header .headerContent .arrowImageContainer img {
   text-decoration: underline;
 }
 
+.myProjectsMorning {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c1311), to(#1b1211));
+  background: linear-gradient(to bottom, #1c1311, #1b1211);
+}
+
+.myProjectsNight {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1e1612), to(#1A1211));
+  background: linear-gradient(to bottom, #1e1612, #1A1211);
+}
+
 .skillsSection {
   background: -webkit-gradient(linear, left top, left bottom, from(#1c1311), to(#130B18));
   background: linear-gradient(to bottom, #1c1311, #130B18);
@@ -1154,6 +1215,16 @@ header .headerContent .arrowImageContainer img {
   color: #3E3CAF;
 }
 
+.skillsSectionMorning {
+  background: -webkit-gradient(linear, left bottom, left top, from(#181818), to(#1B1211));
+  background: linear-gradient(to top, #181818, #1B1211);
+}
+
+.skillsSectionNight {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A1211), to(#130B18));
+  background: linear-gradient(to bottom, #1A1211, #130B18);
+}
+
 .contact {
   position: relative;
   padding-bottom: 175px;
@@ -1172,7 +1243,6 @@ header .headerContent .arrowImageContainer img {
 }
 .contact .overallContactContainer {
   width: calc(100% - 60px);
-  margin-top: 100px;
   width: 100%;
 }
 .contact .overallContactContainer .contactInfo {
@@ -1238,17 +1308,6 @@ header .headerContent .arrowImageContainer img {
   background-color: #fffffe;
   padding: 15px 0px 15px 15px;
 }
-.contact .skylineBackgroundTwo {
-  background: url("../assets/morningSky.png");
-  background-repeat: repeat-x;
-  height: 260px;
-  width: 100%;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-  margin-bottom: 75px;
-}
 .contact .sunContainer {
   position: absolute;
   height: 150px;
@@ -1262,6 +1321,68 @@ header .headerContent .arrowImageContainer img {
 }
 .contact button {
   margin-bottom: 25px;
+}
+
+.skylineBackgroundTwo {
+  background: url("../assets/morningSky.png");
+  background-repeat: repeat-x;
+  height: 260px;
+  width: 100%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  margin-bottom: 75px;
+}
+
+.contactMorning {
+  background: -webkit-gradient(linear, left bottom, left top, from(#283e51), to(#0a2342));
+  background: linear-gradient(to top, #283e51, #0a2342);
+}
+
+.skylineBackgroundTwoMorning {
+  background-image: url("../assets/nightSkyThree.png");
+  height: 350px;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  margin: 0;
+}
+
+.contactContentMorning {
+  margin: 0;
+}
+
+.contactTimeImageMorning {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.contactNight {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ae6063), to(#e4a89b));
+  background: linear-gradient(to bottom, #ae6063, #e4a89b);
+}
+
+.skylineBackgroundTwoNight {
+  background-image: url("../assets/morningSky.png");
+  height: 240px;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  margin-bottom: 75px;
+}
+
+.contactContentNight {
+  margin-top: 0px;
+}
+
+.contactTimeImageNight {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 footer {
