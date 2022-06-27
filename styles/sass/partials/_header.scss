@@ -18,7 +18,6 @@ header {
         }
 
         .arrowImageContainer{
-            margin: 40px auto 0px auto;
             height: 50px;
             width: 50px;
             
@@ -27,7 +26,16 @@ header {
                 width: 100%;
             }
         }
+
+        .arrowWidthContainer {
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
     }
+
 }
 
 .arrowImageContainer {
@@ -149,7 +157,7 @@ header {
 }
 
 .headerTimeImageMorning {
-    filter: brightness(100%);
+    filter: brightness(90%);
 }
 
 .cloudOneMorning {

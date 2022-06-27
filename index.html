@@ -60,12 +60,14 @@
                 <div class="headerContent">
                     <h1>a front-end developer & an aspiring full-stack developer</h1>
                     <h2>scroll to find out more about me</h2>
-                    <a href="#aboutMe" aria-label="navigation">
-                        <div class="arrowImageContainer">
-                            <span class="sr-only">Go to about section</span>
-                            <img src="./assets/arrow.png" alt="">
-                        </div>
-                    </a>
+                    <div class="arrowWidthContainer">
+                        <a href="#aboutMe" aria-label="navigation">
+                            <div class="arrowImageContainer">
+                                <span class="sr-only">Go to about section</span>
+                                <img src="./assets/arrow.png" alt="">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -452,7 +454,13 @@
         </section>
         <footer role="contentinfo">
             <div class="wrapper">
-                <p>Created & designed with <span class="sr-only">love</span><img src="./assets/purpleHeart.png" alt=""> by Lester Yiu</p>
+                <div class="flexContainer">
+                    <p>Created & designed with <span class="sr-only">love</span><img class="heart" src="./assets/purpleHeart.png" alt=""> by Lester Yiu
+                    </p>
+                    <div class="pixelImageContainer">
+                        <img src="./assets/personalImage.png" alt="a pixelated cartoon version of Lester Yiu" class="pixelLester">
+                    </div>
+                </div>
             </div>
         </footer>
     </main>
