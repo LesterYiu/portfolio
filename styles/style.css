@@ -1074,8 +1074,8 @@ header .headerContent .arrowWidthContainer {
 }
 
 .morningAboutBackground {
-  background: -webkit-gradient(linear, left bottom, left top, from(#1c1311), to(#100816));
-  background: linear-gradient(to top, #1c1311, #100816);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1c1311), to(#130B18));
+  background: linear-gradient(to top, #1c1311, #130B18);
   position: relative;
   padding: 125px 0 125px 0;
 }
