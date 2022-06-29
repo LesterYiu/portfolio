@@ -625,14 +625,16 @@ nav .slideButton {
 
 .slideMenu {
   position: fixed;
-  height: 100vh;
-  width: 100vw;
+  background-image: url("../assets/slidemenu.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 80vh;
+  width: 80vw;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 40;
-  background-color: #3E3CAF;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
@@ -1192,9 +1194,9 @@ header .headerContent .arrowWidthContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1225,6 +1227,20 @@ header .headerContent .arrowWidthContainer {
 .skillsSection .skillsIcons .skill p {
   text-align: center;
   color: #3E3CAF;
+}
+.skillsSection .skillsIcons .loadingSkill {
+  position: relative;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+.skillsSection .skillsIcons .loadingSkill img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .skillsSectionMorning {
