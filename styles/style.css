@@ -703,7 +703,7 @@ header .headerContainer.flexContainer {
 header .headerContent {
   position: relative;
   z-index: 10;
-  padding-bottom: 250px;
+  margin-bottom: 280px;
 }
 header .headerContent h1 {
   margin-bottom: 70px;
@@ -787,11 +787,11 @@ header .headerContent .arrowWidthContainer {
 
 .skylineBackground {
   width: 100%;
-  height: 350px;
+  height: 240px;
   background-size: contain;
   position: absolute;
   bottom: 0;
-  background-image: url("../assets/nightskyThree.png");
+  background-image: url("../assets/nightSky.png");
   background-repeat: repeat-x;
   background-position: 0% 100%;
 }
@@ -1367,11 +1367,11 @@ header .headerContent .arrowWidthContainer {
 }
 
 .skylineBackgroundTwoMorning {
-  background-image: url("../assets/nightSkyThree.png");
-  height: 350px;
+  background-image: url("../assets/nightSky.png");
+  height: 240px;
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
-  margin: 0;
+  margin-bottom: 75px;
 }
 
 .contactContentMorning {
@@ -1437,6 +1437,7 @@ footer .heart {
 footer .pixelImageContainer {
   width: 50px;
   height: 50px;
+  margin-left: 15px;
 }
 footer .pixelImageContainer img {
   width: 100%;
@@ -1560,13 +1561,11 @@ footer .pixelImageContainer img {
   .wrapper {
     width: 80%;
   }
-
   .cloudImageContainer,
 .cloudImageContainerTwo {
     -webkit-animation: cloudAnimation linear 300s;
             animation: cloudAnimation linear 300s;
   }
-
   .aboutSection .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1595,7 +1594,6 @@ footer .pixelImageContainer img {
   .aboutSection ul li {
     margin: 10px 0;
   }
-
   .myProjects .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1627,7 +1625,6 @@ footer .pixelImageContainer img {
     margin-bottom: 15px;
     text-align: center;
   }
-
   .contact h2 {
     text-align: center;
   }
@@ -1669,7 +1666,6 @@ footer .pixelImageContainer img {
     -webkit-animation: cloudAnimation linear 260s;
             animation: cloudAnimation linear 260s;
   }
-
   .aboutSection .aboutContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1689,11 +1685,9 @@ footer .pixelImageContainer img {
   .aboutSection .fossilTwoContainer {
     top: 25%;
   }
-
   .myProjects .projectImageContainer {
     width: 85%;
   }
-
   .skillsSection .skillsText p {
     text-align: center;
   }
@@ -1711,25 +1705,21 @@ footer .pixelImageContainer img {
   .wrapper {
     width: 90%;
   }
-
   .logoContainer p {
     font-size: 1rem;
     margin-left: 15px;
   }
-
   header .headerContent {
-    padding-bottom: 200px;
+    margin-bottom: 210px;
   }
   header .headerContent .arrowImageContainer {
     margin: 10px auto 0px auto;
   }
-
   .cloudImageContainer,
 .cloudImageContainerTwo {
     -webkit-animation: cloudAnimation linear 200s;
             animation: cloudAnimation linear 200s;
   }
-
   .timeIconContainer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -1740,12 +1730,10 @@ footer .pixelImageContainer img {
   .timeIconContainer .sunIcon {
     margin-right: 10px;
   }
-
   .aboutSection .fossilTwoContainer {
     top: 20%;
     right: 0%;
   }
-
   .skillsSection .skillsIcons {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1761,11 +1749,9 @@ footer .pixelImageContainer img {
   .skillsSection .skillsIcons .skill p {
     font-size: 1.2rem;
   }
-
   .contact .overallContactContainer .contactInfo {
     text-align: center;
   }
-
   .formContent {
     margin-top: 100px;
   }
@@ -1775,7 +1761,6 @@ footer .pixelImageContainer img {
   .formContent h2 {
     font-size: 1rem;
   }
-
   .formSubmission .formSubmitted .formContent h1 {
     margin-bottom: 35px;
   }

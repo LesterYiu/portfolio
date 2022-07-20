@@ -11,7 +11,7 @@ header {
     .headerContent {
         position: relative;
         z-index: 10;
-        padding-bottom: 250px;
+        margin-bottom: 280px;
 
         h1 {
             margin-bottom: 70px;
@@ -92,11 +92,11 @@ header {
 
 .skylineBackground {
     width: 100%;
-    height: 350px;
+    height: 240px;
     background-size: contain;
     position: absolute;
     bottom: 0;
-    background-image: url("../assets/nightskyThree.png");
+    background-image: url("../assets/nightSky.png");
     background-repeat: repeat-x;
     background-position: 0% 100%;
 }
