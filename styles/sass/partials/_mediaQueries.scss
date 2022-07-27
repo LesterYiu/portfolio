@@ -102,8 +102,14 @@
         ul {
             margin: 15px 0 30px 0;
             justify-content: space-evenly;
+
+            .clearButton {
+                margin-right: 0;
+            }
         }
+
     }
+
 }
 
 @media (max-width: 768px) {

@@ -32,6 +32,10 @@ app.projectSection = document.querySelector('.myProjects');
 
 app.skillsSection = document.querySelector('.skillsSection');
 
+// learning skills element
+
+app.learningSection = document.querySelector('.learningSection');
+
 // contact elements
 app.textareaEl = document.querySelector('textarea');
 app.submitBtnEl = document.querySelector('button[type="submit"]');
@@ -203,6 +207,10 @@ app.changeToMorningHeader = () => {
     //skills section
     app.skillsSection.className = 'skillsSection skillsSectionMorning';
 
+    // learning section
+
+    app.learningSection.className = 'learningSection learningSectionMorning'
+
     // contact section changes to night
     app.contactSection.className = 'contact contactMorning';
     app.contactSkyline.className = 'skylineBackgroundTwo skylineBackgroundTwoMorning';
@@ -232,6 +240,10 @@ app.changeToNightHeader = () => {
 
     // skills section
     app.skillsSection.className = 'skillsSection skillsSectionNight';
+
+    // learning section
+
+    app.learningSection.className = 'learningSection'
 
     // contact section changes from night to morning
     app.contactSection.className = 'contact contactNight';
