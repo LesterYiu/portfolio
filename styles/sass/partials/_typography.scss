@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: $secondary-font;
+    font-family: 'Pixeloid Sans';
     color: $tertiary;
 }
 
@@ -22,14 +22,14 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: capitalize;
     line-height: 35px;
     color: $quinary;
 }
 
 h3 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-transform: capitalize;
     line-height: 35px;
 }
@@ -37,10 +37,11 @@ h3 {
 h4 {
     font-size: 1.5rem;
     text-transform: capitalize;
+    font-family: $secondary-font;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     letter-spacing: 0.5px;
     color: $tertiary;
 }

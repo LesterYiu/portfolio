@@ -236,6 +236,10 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "Pixeloid Sans";
+  src: url("../fonts/PixeloidSans.ttf") format("truetype");
+}
 html,
 body {
   overflow-x: hidden;
@@ -336,7 +340,7 @@ html {
 }
 
 body {
-  font-family: "VT323", monospace;
+  font-family: "Pixeloid Sans";
   color: #fffffe;
 }
 
@@ -354,14 +358,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-transform: capitalize;
   line-height: 35px;
   color: #7472EC;
 }
 
 h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-transform: capitalize;
   line-height: 35px;
 }
@@ -369,10 +373,11 @@ h3 {
 h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
+  font-family: "VT323", monospace;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   letter-spacing: 0.5px;
   color: #fffffe;
 }
@@ -953,7 +958,7 @@ header .headerContent .arrowWidthContainer {
           justify-content: center;
 }
 .aboutSection .aboutText .aboutParagraphFirst {
-  margin: 55px 0px 25px 0;
+  margin: 25px 0px 25px 0;
 }
 .aboutSection .aboutContainer {
   width: calc(100% - 20px);
@@ -1619,6 +1624,7 @@ footer .pixelImageContainer img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-top: 100px;
   }
   .myProjects .project .projectInfo {
     width: 100%;
@@ -1720,6 +1726,12 @@ footer .pixelImageContainer img {
   .skillsSection .skillsIcons .skill .skillContainer {
     width: 175px;
   }
+  .learningSection .skill {
+    width: 50%;
+  }
+  .learningSection .skill .skillContainer {
+    width: 175px;
+  }
 }
 @media (max-width: 480px) {
   .wrapper {
@@ -1767,7 +1779,15 @@ footer .pixelImageContainer img {
     width: 135px;
   }
   .skillsSection .skillsIcons .skill p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    padding-top: 10px;
+  }
+  .learningSection .skill .skillContainer {
+    width: 135px;
+  }
+  .learningSection .skillsIcons .skill p {
+    font-size: 0.9rem;
+    padding-top: 10px;
   }
   .contact .overallContactContainer .contactInfo {
     text-align: center;

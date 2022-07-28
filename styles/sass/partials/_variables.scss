@@ -1,6 +1,10 @@
 //FONTS
 $primary-font: 'Press Start 2P', cursive;
 $secondary-font: 'VT323', monospace;
+@font-face {
+    font-family: 'Pixeloid Sans';
+    src: url('../fonts/PixeloidSans.ttf') format("truetype");
+}
 
 //COLORS
 $primary: #232946;

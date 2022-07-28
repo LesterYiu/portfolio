@@ -264,13 +264,18 @@ app.scrollRevealUpward = () => {
 
         if (elementTop < totalWindowHeight - elementVisible) {
             app.revealEls[i].classList.add("active");
-        } else {
-            app.revealEls[i].classList.remove("active");
         }
     }
 }
 
 window.addEventListener("scroll", app.scrollRevealUpward);
+
+app.console = () => {
+    console.log('scrolled');
+}
+
+window.addEventListener("scroll", app.console);
+// init
 
 app.init = () => {
     app.slideMenuFunction();

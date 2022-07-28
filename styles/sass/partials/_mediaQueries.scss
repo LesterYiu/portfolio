@@ -45,6 +45,7 @@
         .project {
             flex-direction: column;
             align-items: center;
+            margin-top: 100px;
 
             .projectInfo {
                 width: 100%;
@@ -151,6 +152,7 @@
     //Skills Section
 
     .skillsSection {
+
         .skillsText p {
             text-align: center;
         }
@@ -170,6 +172,16 @@
                 .skillContainer {
                     width: 175px;
                 }
+        }
+    }
+
+    //Learning Section
+
+    .learningSection .skill{
+        width: 50%;
+
+        .skillContainer {
+            width: 175px;
         }
     }
 }
@@ -238,12 +250,25 @@
                 }
 
                 p {
-                    font-size: 1.2rem;
+                    font-size: 0.9rem;
+                    padding-top: 10px;
                 }
             }
         }
     }
 
+    // Learning Section
+
+    .learningSection {
+        .skill .skillContainer {
+            width: 135px;
+        }
+
+        .skillsIcons .skill p {
+            font-size: 0.9rem;
+            padding-top: 10px;
+        }
+    }
     //Contact Section
     .contact {
 
