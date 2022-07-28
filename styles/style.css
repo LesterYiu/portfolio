@@ -1104,6 +1104,9 @@ header .headerContent .arrowWidthContainer {
   background: linear-gradient(to bottom, #1e1612, #1c1311);
   padding-bottom: 125px;
 }
+.myProjects h3 {
+  white-space: nowrap;
+}
 .myProjects .flexContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

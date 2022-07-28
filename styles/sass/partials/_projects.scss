@@ -2,6 +2,10 @@
     background:linear-gradient(to bottom, #1e1612, #1c1311);
     padding-bottom: 125px;
 
+    h3 {
+        white-space: nowrap;
+    }
+
     .flexContainer {
         flex-direction: column;
         align-items: center;
