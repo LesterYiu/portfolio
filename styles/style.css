@@ -250,7 +250,11 @@ html {
 }
 
 body {
-  cursor: url(../assets/cursor.png), auto;
+  cursor: url(../assets/cursor2.png), auto;
+}
+
+a {
+  cursor: url(../assets/cursor.png), pointer;
 }
 
 .wrapper {
@@ -1236,6 +1240,18 @@ header .headerContent .arrowWidthContainer {
   color: #3E3CAF;
 }
 
+.upButton {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 30;
+  opacity: 80%;
+}
+.upButton img {
+  height: 75px;
+  width: 75px;
+}
+
 .skillsSectionMorning {
   background: -webkit-gradient(linear, left bottom, left top, from(#181818), to(#1B1211));
   background: linear-gradient(to top, #181818, #1B1211);
@@ -1439,6 +1455,8 @@ header .headerContent .arrowWidthContainer {
 footer {
   background-color: black;
   padding: 20px 0;
+  position: relative;
+  z-index: 40;
 }
 footer .flexContainer {
   -webkit-box-pack: center;
@@ -1458,17 +1476,6 @@ footer .heart {
   bottom: -10px;
   -webkit-filter: brightness(80%);
           filter: brightness(80%);
-}
-footer .pixelImageContainer {
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-}
-footer .pixelImageContainer img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .formSubmission nav {

@@ -48,6 +48,19 @@
         }
     }
 }
+
+.upButton {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 30;
+    opacity: 80%;
+
+    img {
+        height: 75px;
+        width: 75px;
+    }
+}
 // changeToMorningHeader styles
 
 .skillsSectionMorning{

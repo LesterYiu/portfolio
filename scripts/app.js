@@ -31,6 +31,7 @@ app.projectSection = document.querySelector('.myProjects');
 // skills elements
 
 app.skillsSection = document.querySelector('.skillsSection');
+app.upButton = document.querySelector('.upButton');
 
 // learning skills element
 
@@ -271,9 +272,18 @@ app.scrollRevealUpward = () => {
 window.addEventListener("scroll", app.scrollRevealUpward);
 
 app.console = () => {
-    console.log('scrolled');
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = Math.ceil(window.scrollY);
+    const halfPage = Math.ceil(scrollable /2);
+
+    if (scrolled > halfPage) {
+        app.upButton.className = "upButton"
+    } else {
+        app.upButton.className = "upButton hidden"
+    }
 }
 
+window.addEventListener("scroll", app.console);
 // init
 
 app.init = () => {
