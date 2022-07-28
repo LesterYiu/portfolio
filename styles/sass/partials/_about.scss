@@ -47,8 +47,18 @@
         width: 40%;
     }
 
-    .promo {
-        margin-top: 20px;
+    .promoOne,
+    .promoTwo {
+        text-decoration: underline;
+    }
+
+    .promoTwo {
+        margin-top: 25px;
+    }
+
+    .promoOne {
+        margin-bottom: 40px;
+
     }
 
     .selfieContainer {

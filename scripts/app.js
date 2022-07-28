@@ -274,7 +274,6 @@ app.console = () => {
     console.log('scrolled');
 }
 
-window.addEventListener("scroll", app.console);
 // init
 
 app.init = () => {

@@ -411,10 +411,6 @@ header h2 {
   font-size: 1.1rem;
 }
 
-.promo {
-  color: #B7B7B7;
-}
-
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-family: "VT323", monospace;
   font-size: 1.2rem;
@@ -966,8 +962,15 @@ header .headerContent .arrowWidthContainer {
 .aboutSection .aboutContent {
   width: 40%;
 }
-.aboutSection .promo {
-  margin-top: 20px;
+.aboutSection .promoOne,
+.aboutSection .promoTwo {
+  text-decoration: underline;
+}
+.aboutSection .promoTwo {
+  margin-top: 25px;
+}
+.aboutSection .promoOne {
+  margin-bottom: 40px;
 }
 .aboutSection .selfieContainer {
   height: 100%;
