@@ -274,9 +274,9 @@ window.addEventListener("scroll", app.scrollRevealUpward);
 app.console = () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = Math.ceil(window.scrollY);
-    const halfPage = Math.ceil(scrollable /2);
+    const quarterPage = Math.ceil(scrollable /4);
 
-    if (scrolled > halfPage) {
+    if (scrolled > quarterPage) {
         app.upButton.className = "upButton"
     } else {
         app.upButton.className = "upButton hidden"
