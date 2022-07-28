@@ -271,7 +271,7 @@ app.scrollRevealUpward = () => {
 
 window.addEventListener("scroll", app.scrollRevealUpward);
 
-app.console = () => {
+app.scrollButton = () => {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = Math.ceil(window.scrollY);
     const quarterPage = Math.ceil(scrollable /4);
@@ -283,7 +283,7 @@ app.console = () => {
     }
 }
 
-window.addEventListener("scroll", app.console);
+window.addEventListener("scroll", app.scrollButton);
 // init
 
 app.init = () => {
