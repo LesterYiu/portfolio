@@ -975,6 +975,7 @@ header .headerContent .arrowWidthContainer {
 }
 .aboutSection .promoOne {
   margin-bottom: 40px;
+  width: 75%;
 }
 .aboutSection .selfieContainer {
   height: 100%;
@@ -1732,6 +1733,9 @@ footer .heart {
   }
 }
 @media (max-width: 660px) {
+  .aboutSection .promoOne {
+    width: 100%;
+  }
   .skillsSection .skillsIcons .skill {
     width: 50%;
     margin-bottom: 30px;
