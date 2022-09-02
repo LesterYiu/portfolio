@@ -1243,6 +1243,9 @@ header .headerContent .arrowWidthContainer {
   text-align: center;
   color: #3E3CAF;
 }
+.skillsIcons .skill .bigSkill {
+  font-size: 1rem;
+}
 
 .upButton {
   position: fixed;
@@ -1798,6 +1801,9 @@ footer .heart {
   .skillsSection .skillsIcons .skill p {
     font-size: 0.9rem;
     padding-top: 10px;
+  }
+  .skillsSection .skillsIcons .skill .bigSkill {
+    font-size: 0.8rem;
   }
   .learningSection .skill .skillContainer {
     width: 135px;
