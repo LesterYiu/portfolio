@@ -965,6 +965,9 @@ header .headerContent .arrowWidthContainer {
 }
 .aboutSection .aboutContent {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .aboutSection .promoOne,
 .aboutSection .promoTwo {
@@ -978,8 +981,8 @@ header .headerContent .arrowWidthContainer {
   width: 75%;
 }
 .aboutSection .selfieContainer {
-  height: 100%;
-  width: 100%;
+  height: 300px;
+  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -989,8 +992,9 @@ header .headerContent .arrowWidthContainer {
   position: relative;
 }
 .aboutSection .selfieContainer img {
-  height: 80%;
-  width: 80%;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
   border-radius: 50%;
   border: 3px double #3E3CAF;
 }
@@ -1624,12 +1628,7 @@ footer .heart {
   .aboutSection .aboutText {
     width: 100%;
   }
-  .aboutSection ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+
   .aboutSection ul li {
     margin: 10px 0;
   }
